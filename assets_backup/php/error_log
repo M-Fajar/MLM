@@ -1,0 +1,3 @@
+[07-Apr-2021 22:04:00 Asia/Kolkata] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/magirtzm/jamsrworld.com/demo/mlm2/assets/php/PHPMailer/PHPMailerAutoload.php on line 45
+[08-Apr-2021 08:46:16 Asia/Kolkata] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/magirtzm/jamsrworld.com/demo/mlm2/assets/php/PHPMailer/PHPMailerAutoload.php on line 45
+[08-Apr-2021 11:33:57 Asia/Kolkata] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/magirtzm/jamsrworld.com/demo/mlm-with-admin/assets/php/PHPMailer/PHPMailerAutoload.php on line 45

@@ -1,0 +1,42 @@
+[07-Apr-2021 21:52:43 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function clean_text() in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php:14
+Stack trace:
+#0 /home/magirtzm/jamsrworld.com/demo/mlm2/admin/index.php(4): is_admin_loggedin()
+#1 {main}
+  thrown in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php on line 14
+[07-Apr-2021 21:53:19 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function clean_text() in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php:14
+Stack trace:
+#0 /home/magirtzm/jamsrworld.com/demo/mlm2/admin/index.php(4): is_admin_loggedin()
+#1 {main}
+  thrown in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php on line 14
+[07-Apr-2021 21:53:20 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function clean_text() in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php:14
+Stack trace:
+#0 /home/magirtzm/jamsrworld.com/demo/mlm2/admin/index.php(4): is_admin_loggedin()
+#1 {main}
+  thrown in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php on line 14
+[07-Apr-2021 21:53:22 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function clean_text() in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php:14
+Stack trace:
+#0 /home/magirtzm/jamsrworld.com/demo/mlm2/admin/index.php(4): is_admin_loggedin()
+#1 {main}
+  thrown in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php on line 14
+[07-Apr-2021 21:54:11 Asia/Kolkata] PHP Fatal error:  Cannot redeclare total_added_money() (previously declared in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php:1506) in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php on line 1506
+[07-Apr-2021 21:54:13 Asia/Kolkata] PHP Fatal error:  Cannot redeclare total_added_money() (previously declared in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php:1506) in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php on line 1506
+[07-Apr-2021 21:54:19 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function clean_text() in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php:14
+Stack trace:
+#0 /home/magirtzm/jamsrworld.com/demo/mlm2/admin/index.php(3): is_admin_loggedin()
+#1 {main}
+  thrown in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php on line 14
+[07-Apr-2021 21:54:21 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function clean_text() in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php:14
+Stack trace:
+#0 /home/magirtzm/jamsrworld.com/demo/mlm2/admin/index.php(3): is_admin_loggedin()
+#1 {main}
+  thrown in /home/magirtzm/jamsrworld.com/demo/mlm2/admin/assets/php/functions.php on line 14
+[08-Apr-2021 11:32:02 Asia/Kolkata] PHP Notice:  Undefined variable: count in /home/magirtzm/jamsrworld.com/demo/mlm-with-admin/admin/assets/php/admin_close_ticket.php on line 34
+[08-Apr-2021 11:32:02 Asia/Kolkata] PHP Notice:  Undefined variable: pin_sell_amt in /home/magirtzm/jamsrworld.com/demo/mlm-with-admin/admin/assets/php/admin_close_ticket.php on line 35
+[08-Apr-2021 11:32:02 Asia/Kolkata] PHP Notice:  Undefined variable: withdrawl in /home/magirtzm/jamsrworld.com/demo/mlm-with-admin/admin/assets/php/admin_close_ticket.php on line 36
+[08-Apr-2021 11:32:02 Asia/Kolkata] PHP Notice:  Undefined variable: profit in /home/magirtzm/jamsrworld.com/demo/mlm-with-admin/admin/assets/php/admin_close_ticket.php on line 37
+[08-Apr-2021 11:32:02 Asia/Kolkata] PHP Notice:  Undefined variable: date in /home/magirtzm/jamsrworld.com/demo/mlm-with-admin/admin/assets/php/admin_close_ticket.php on line 38
+[08-Apr-2021 12:15:24 Asia/Kolkata] PHP Notice:  Undefined variable: count in /home/magirtzm/jamsrworld.com/demo/mlm-with-admin/admin/assets/php/admin_close_ticket.php on line 34
+[08-Apr-2021 12:15:24 Asia/Kolkata] PHP Notice:  Undefined variable: pin_sell_amt in /home/magirtzm/jamsrworld.com/demo/mlm-with-admin/admin/assets/php/admin_close_ticket.php on line 35
+[08-Apr-2021 12:15:24 Asia/Kolkata] PHP Notice:  Undefined variable: withdrawl in /home/magirtzm/jamsrworld.com/demo/mlm-with-admin/admin/assets/php/admin_close_ticket.php on line 36
+[08-Apr-2021 12:15:24 Asia/Kolkata] PHP Notice:  Undefined variable: profit in /home/magirtzm/jamsrworld.com/demo/mlm-with-admin/admin/assets/php/admin_close_ticket.php on line 37
+[08-Apr-2021 12:15:24 Asia/Kolkata] PHP Notice:  Undefined variable: date in /home/magirtzm/jamsrworld.com/demo/mlm-with-admin/admin/assets/php/admin_close_ticket.php on line 38

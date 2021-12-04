@@ -1,0 +1,1339 @@
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : mlm_db
+ Source Server Type    : MySQL
+ Source Server Version : 50733
+ Source Host           : localhost:3306
+ Source Schema         : anypearl
+
+ Target Server Type    : MySQL
+ Target Server Version : 50733
+ File Encoding         : 65001
+
+ Date: 26/05/2021 00:27:11
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for balance
+-- ----------------------------
+DROP TABLE IF EXISTS `balance`;
+CREATE TABLE `balance`  (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `wallet` decimal(10, 2) NOT NULL,
+  `income` decimal(10, 2) NOT NULL,
+  `total_income` decimal(10, 2) NOT NULL,
+  `total_withdrawl` decimal(10, 2) NOT NULL,
+  `expenditure` decimal(10, 2) NOT NULL,
+  `pending` decimal(10, 2) NOT NULL,
+  `last_added_money` decimal(10, 2) NOT NULL,
+  `total_added_money` decimal(10, 2) NOT NULL,
+  `last_withdrawl` decimal(10, 2) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 43 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of balance
+-- ----------------------------
+INSERT INTO `balance` VALUES (1, '1006090', 1481010.00, 1480410.00, 1480410.00, 1327.00, 7318.00, 1699.00, 9.00, 11009.00, 65.00);
+INSERT INTO `balance` VALUES (2, '1006091', 51.00, 51.00, 100.00, 0.00, 49.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (3, '1006092', 60.00, 60.00, 60.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (4, '1006093', 20.00, 20.00, 20.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (5, '1006094', 40.00, 40.00, 40.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (6, '1006095', 20.00, 20.00, 20.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (7, '1006096', 20.00, 20.00, 20.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (8, '1006097', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (9, '1006098', 20.00, 20.00, 20.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (10, '1006099', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (11, '1006100', 20.00, 20.00, 20.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (12, '1006101', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (13, '1006102', 20.00, 20.00, 20.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (14, '1006103', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (15, '1006104', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (16, '1006105', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (17, '1006106', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (18, '1006107', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (19, '1006108', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (20, '1006109', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (21, '1006110', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (22, '1006111', 2177742.00, 840330.00, 840330.00, 300000.00, 10012588.00, 350000.00, 9000000.00, 12000000.00, 100000.00);
+INSERT INTO `balance` VALUES (23, '1006112', 499942.00, 40.00, 40.00, 0.00, 98.00, 0.00, 500000.00, 500000.00, 0.00);
+INSERT INTO `balance` VALUES (24, '1006113', 20.00, 20.00, 20.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (25, '1006114', 20.00, 20.00, 20.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (26, '1006115', 500021.00, 70.00, 70.00, 0.00, 49.00, 0.00, 500000.00, 500000.00, 0.00);
+INSERT INTO `balance` VALUES (27, '1006116', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (28, '1006117', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (29, '1006118', 40.00, 40.00, 40.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (30, '1006119', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (31, '1006120', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (32, '1006121', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (33, '1006122', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (34, '1006123', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (35, '1006124', 20.00, 20.00, 20.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (36, '1006125', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (37, '1006126', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (38, '1006127', 110000.00, 0.00, 0.00, 0.00, 0.00, 0.00, 100000.00, 110000.00, 0.00);
+INSERT INTO `balance` VALUES (39, '1006128', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (40, '1006129', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (41, '1006130', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `balance` VALUES (42, '1006131', 1600000.00, 0.00, 0.00, 0.00, 8400000.00, 0.00, 9000000.00, 10000000.00, 0.00);
+
+-- ----------------------------
+-- Table structure for blocked_users
+-- ----------------------------
+DROP TABLE IF EXISTS `blocked_users`;
+CREATE TABLE `blocked_users`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `blocked_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of blocked_users
+-- ----------------------------
+INSERT INTO `blocked_users` VALUES (2, '1006101', '1617812760');
+
+-- ----------------------------
+-- Table structure for capping
+-- ----------------------------
+DROP TABLE IF EXISTS `capping`;
+CREATE TABLE `capping`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `income` decimal(10, 2) NOT NULL,
+  `date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 34 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of capping
+-- ----------------------------
+INSERT INTO `capping` VALUES (1, '1006090', 330.00, '07-04-2021');
+INSERT INTO `capping` VALUES (2, '1006092', 60.00, '07-04-2021');
+INSERT INTO `capping` VALUES (3, '1006091', 60.00, '07-04-2021');
+INSERT INTO `capping` VALUES (4, '1006096', 20.00, '07-04-2021');
+INSERT INTO `capping` VALUES (5, '1006095', 20.00, '07-04-2021');
+INSERT INTO `capping` VALUES (6, '1006094', 40.00, '07-04-2021');
+INSERT INTO `capping` VALUES (7, '1006093', 20.00, '07-04-2021');
+INSERT INTO `capping` VALUES (8, '1006090', 70.00, '08-04-2021');
+INSERT INTO `capping` VALUES (9, '1006091', 20.00, '08-04-2021');
+INSERT INTO `capping` VALUES (10, '1006100', 20.00, '08-04-2021');
+INSERT INTO `capping` VALUES (11, '1006102', 20.00, '08-04-2021');
+INSERT INTO `capping` VALUES (12, '1006090', 10.00, '22-04-2021');
+INSERT INTO `capping` VALUES (13, '1006098', 20.00, '22-04-2021');
+INSERT INTO `capping` VALUES (14, '1006091', 20.00, '22-04-2021');
+INSERT INTO `capping` VALUES (15, '1006111', 180.00, '22-04-2021');
+INSERT INTO `capping` VALUES (16, '1006112', 40.00, '22-04-2021');
+INSERT INTO `capping` VALUES (17, '1006115', 10.00, '22-04-2021');
+INSERT INTO `capping` VALUES (18, '1006114', 20.00, '22-04-2021');
+INSERT INTO `capping` VALUES (19, '1006118', 20.00, '22-04-2021');
+INSERT INTO `capping` VALUES (20, '1006111', 30.00, '23-04-2021');
+INSERT INTO `capping` VALUES (21, '1006113', 20.00, '23-04-2021');
+INSERT INTO `capping` VALUES (22, '1006111', 20.00, '24-04-2021');
+INSERT INTO `capping` VALUES (23, '1006115', 20.00, '24-04-2021');
+INSERT INTO `capping` VALUES (24, '1006111', 30.00, '25-04-2021');
+INSERT INTO `capping` VALUES (25, '1006111', 10.00, '27-04-2021');
+INSERT INTO `capping` VALUES (26, '1006111', 10.00, '01-05-2021');
+INSERT INTO `capping` VALUES (27, '1006111', 10.00, '06-05-2021');
+INSERT INTO `capping` VALUES (28, '1006115', 20.00, '06-05-2021');
+INSERT INTO `capping` VALUES (29, '1006111', 30.00, '11-05-2021');
+INSERT INTO `capping` VALUES (30, '1006118', 20.00, '11-05-2021');
+INSERT INTO `capping` VALUES (31, '1006111', 10.00, '25-05-2021');
+INSERT INTO `capping` VALUES (32, '1006124', 20.00, '25-05-2021');
+INSERT INTO `capping` VALUES (33, '1006115', 20.00, '25-05-2021');
+
+-- ----------------------------
+-- Table structure for deposit_summary
+-- ----------------------------
+DROP TABLE IF EXISTS `deposit_summary`;
+CREATE TABLE `deposit_summary`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `amount` decimal(10, 2) NOT NULL,
+  `payment_method` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of deposit_summary
+-- ----------------------------
+INSERT INTO `deposit_summary` VALUES (1, '1006090', 999.00, 'paytm', '1617787333');
+INSERT INTO `deposit_summary` VALUES (2, '1006090', 9999.00, 'paytm', '1617789697');
+INSERT INTO `deposit_summary` VALUES (3, '1006090', 2.00, 'paytm', '1617853578');
+INSERT INTO `deposit_summary` VALUES (4, '1006090', 9.00, 'paytm', '1617861954');
+INSERT INTO `deposit_summary` VALUES (5, '1006111', 1000000.00, 'paytm', '1619075439');
+INSERT INTO `deposit_summary` VALUES (6, '1006112', 500000.00, 'paytm', '1619082768');
+INSERT INTO `deposit_summary` VALUES (7, '1006111', 1000000.00, 'paytm', '1619083197');
+INSERT INTO `deposit_summary` VALUES (8, '1006115', 500000.00, 'paytm', '1619088378');
+INSERT INTO `deposit_summary` VALUES (9, '1006127', 10000.00, 'paytm', '1619529056');
+INSERT INTO `deposit_summary` VALUES (10, '1006127', 100000.00, 'paytm', '1619529107');
+INSERT INTO `deposit_summary` VALUES (11, '1006111', 1000000.00, 'paytm', '1620561736');
+INSERT INTO `deposit_summary` VALUES (12, '1006111', 9000000.00, 'paytm', '1620561801');
+INSERT INTO `deposit_summary` VALUES (13, '1006131', 1000000.00, 'paytm', '1621953810');
+INSERT INTO `deposit_summary` VALUES (14, '1006131', 9000000.00, 'paytm', '1621953861');
+
+-- ----------------------------
+-- Table structure for income_history
+-- ----------------------------
+DROP TABLE IF EXISTS `income_history`;
+CREATE TABLE `income_history`  (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `amount` decimal(10, 2) NOT NULL,
+  `date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `agent_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `category` int(5) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 95 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of income_history
+-- ----------------------------
+INSERT INTO `income_history` VALUES (1, '1006090', 10.00, '1617789976', '1006091', 'credit', 2);
+INSERT INTO `income_history` VALUES (2, '1006090', 10.00, '1617790096', '1006092', 'credit', 2);
+INSERT INTO `income_history` VALUES (3, '1006090', 20.00, '1617790096', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (4, '1006090', 10.00, '1617790224', '1006093', 'credit', 2);
+INSERT INTO `income_history` VALUES (5, '1006090', 10.00, '1617790255', '1006094', 'credit', 2);
+INSERT INTO `income_history` VALUES (6, '1006092', 20.00, '1617790255', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (7, '1006090', 10.00, '1617790307', '1006095', 'credit', 2);
+INSERT INTO `income_history` VALUES (8, '1006090', 20.00, '1617790307', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (9, '1006090', 10.00, '1617790351', '1006096', 'credit', 2);
+INSERT INTO `income_history` VALUES (10, '1006091', 20.00, '1617790351', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (11, '1006090', 20.00, '1617790351', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (12, '1006090', 10.00, '1617790988', '1006097', 'credit', 2);
+INSERT INTO `income_history` VALUES (13, '1006090', 10.00, '1617791044', '1006098', 'credit', 2);
+INSERT INTO `income_history` VALUES (14, '1006096', 20.00, '1617791044', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (15, '1006090', 10.00, '1617791096', '1006099', 'credit', 2);
+INSERT INTO `income_history` VALUES (16, '1006091', 20.00, '1617791096', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (17, '1006090', 10.00, '1617791935', '1006100', 'credit', 2);
+INSERT INTO `income_history` VALUES (18, '1006095', 20.00, '1617791935', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (19, '1006091', 20.00, '1617791935', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (20, '1006090', 10.00, '1617792062', '1006101', 'credit', 2);
+INSERT INTO `income_history` VALUES (21, '1006090', 20.00, '1617792062', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (22, '1006090', 10.00, '1617792541', '1006102', 'credit', 2);
+INSERT INTO `income_history` VALUES (23, '1006092', 20.00, '1617792541', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (24, '1006090', 20.00, '1617792541', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (25, '1006090', 10.00, '1617792572', '1006103', 'credit', 2);
+INSERT INTO `income_history` VALUES (26, '1006094', 20.00, '1617792572', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (27, '1006090', 20.00, '1617792572', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (28, '1006090', 10.00, '1617792949', '1006104', 'credit', 2);
+INSERT INTO `income_history` VALUES (29, '1006093', 20.00, '1617792949', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (30, '1006092', 20.00, '1617792949', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (31, '1006090', 20.00, '1617792949', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (32, '1006090', 10.00, '1617793042', '1006105', 'credit', 2);
+INSERT INTO `income_history` VALUES (33, '1006090', 10.00, '1617813275', '1006106', 'credit', 2);
+INSERT INTO `income_history` VALUES (34, '1006090', 20.00, '1617813275', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (35, '1006090', 10.00, '1617813849', '1006107', 'credit', 2);
+INSERT INTO `income_history` VALUES (36, '1006094', 20.00, '1617813849', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (37, '1006090', 10.00, '1617851870', '1006108', 'credit', 2);
+INSERT INTO `income_history` VALUES (38, '1006091', 20.00, '1617851870', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (39, '1006090', 20.00, '1617851870', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (40, '1006090', 10.00, '1617852008', '1006109', 'credit', 2);
+INSERT INTO `income_history` VALUES (41, '1006100', 20.00, '1617852008', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (42, '1006090', 10.00, '1617861893', '1006110', 'credit', 2);
+INSERT INTO `income_history` VALUES (43, '1006102', 20.00, '1617861893', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (44, '1006090', 20.00, '1617861893', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (45, '1006090', 10.00, '1619080793', '1006111', 'credit', 2);
+INSERT INTO `income_history` VALUES (46, '1006098', 20.00, '1619080793', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (47, '1006091', 20.00, '1619080793', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (48, '1006111', 10.00, '1619087911', '1006112', 'credit', 2);
+INSERT INTO `income_history` VALUES (49, '1006111', 10.00, '1619088424', '1006113', 'credit', 2);
+INSERT INTO `income_history` VALUES (50, '1006111', 10.00, '1619088536', '1006114', 'credit', 2);
+INSERT INTO `income_history` VALUES (51, '1006111', 20.00, '1619088536', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (52, '1006112', 10.00, '1619093708', '1006115', 'credit', 2);
+INSERT INTO `income_history` VALUES (53, '1006115', 10.00, '1619093889', '1006116', 'credit', 2);
+INSERT INTO `income_history` VALUES (54, '1006112', 10.00, '1619094289', '1006117', 'credit', 2);
+INSERT INTO `income_history` VALUES (55, '1006112', 20.00, '1619094289', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (56, '1006111', 10.00, '1619094607', '1006118', 'credit', 2);
+INSERT INTO `income_history` VALUES (57, '1006111', 20.00, '1619094607', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (58, '1006111', 10.00, '1619094721', '1006119', 'credit', 2);
+INSERT INTO `income_history` VALUES (59, '1006111', 20.00, '1619094721', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (60, '1006111', 10.00, '1619094803', '1006120', 'credit', 2);
+INSERT INTO `income_history` VALUES (61, '1006114', 20.00, '1619094803', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (62, '1006111', 20.00, '1619094803', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (63, '1006111', 10.00, '1619095173', '1006121', 'credit', 2);
+INSERT INTO `income_history` VALUES (64, '1006118', 20.00, '1619095173', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (65, '1006111', 20.00, '1619095173', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (66, '1006111', 10.00, '1619095329', '1006122', 'credit', 2);
+INSERT INTO `income_history` VALUES (67, '1006111', 10.00, '1619194944', '1006123', 'credit', 2);
+INSERT INTO `income_history` VALUES (68, '1006113', 20.00, '1619194944', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (69, '1006111', 20.00, '1619194944', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (70, '1006111', 10.00, '1619256772', '1006124', 'credit', 2);
+INSERT INTO `income_history` VALUES (71, '1006115', 20.00, '1619256772', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (72, '1006111', 10.00, '1619261200', '1006125', 'credit', 2);
+INSERT INTO `income_history` VALUES (73, '1006111', 10.00, '1619353207', '1006126', 'credit', 2);
+INSERT INTO `income_history` VALUES (74, '1006111', 20.00, '1619353207', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (75, '1006111', 10.00, '1619534204', '1006127', 'credit', 2);
+INSERT INTO `income_history` VALUES (76, '1006111', 10.00, '1619881083', '1006128', 'credit', 2);
+INSERT INTO `income_history` VALUES (77, '1006090', 120000.00, '1620218100', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (78, '1006090', 120000.00, '1620218118', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (79, '1006090', 120000.00, '1620218123', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (80, '1006111', 10.00, '1620299775', '1006129', 'credit', 2);
+INSERT INTO `income_history` VALUES (81, '1006115', 20.00, '1620299775', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (82, '1006090', 120000.00, '1620313146', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (83, '1006090', 120000.00, '1620567091', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (84, '1006090', 120000.00, '1620567242', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (85, '1006090', 120000.00, '1620567344', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (86, '1006090', 320000.00, '1620570994', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (87, '1006090', 320000.00, '1620570996', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (88, '1006111', 10.00, '1620682380', '1006130', 'credit', 2);
+INSERT INTO `income_history` VALUES (89, '1006118', 20.00, '1620682380', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (90, '1006111', 20.00, '1620682380', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (91, '1006111', 10.00, '1621959104', '1006131', 'credit', 2);
+INSERT INTO `income_history` VALUES (92, '1006124', 20.00, '1621959104', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (93, '1006115', 20.00, '1621959104', '', 'credit', 1);
+INSERT INTO `income_history` VALUES (94, '1006111', 840000.00, '1621959309', '', 'credit', 1);
+
+-- ----------------------------
+-- Table structure for login_session
+-- ----------------------------
+DROP TABLE IF EXISTS `login_session`;
+CREATE TABLE `login_session`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `session_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `loggedin_at` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `valid_till` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 230 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of login_session
+-- ----------------------------
+INSERT INTO `login_session` VALUES (1, '1006090', '97d9abb466d4439898b00666124b56b3', '1617637494', '1620229494');
+INSERT INTO `login_session` VALUES (3, '1006105', '4a04b57c9f8f4063babeccc4b3065087', '1617810104', '2592000');
+INSERT INTO `login_session` VALUES (4, '1006105', '252e4f32606d4492bf1b731efc6a0149', '1617810121', '2592000');
+INSERT INTO `login_session` VALUES (5, '1006104', 'ddfc8203414848a9abde46cf47864f99', '1617810126', '2592000');
+INSERT INTO `login_session` VALUES (6, '1006105', '8a64412766324c77ac48b31059b7f2e9', '1617810148', '2592000');
+INSERT INTO `login_session` VALUES (7, '1006105', '2cc8b4648a054269abf5a9c2a035d328', '1617810153', '2592000');
+INSERT INTO `login_session` VALUES (8, '1006105', '8e310cf9efbf4851bea89a672bd4f6a3', '1617810165', '2592000');
+INSERT INTO `login_session` VALUES (9, '1006105', 'e24803c98c92403fb525b9f5ff784555', '1617810176', '2592000');
+INSERT INTO `login_session` VALUES (10, '1006105', 'c646bddfef3d4c139c907037361d735d', '1617810206', '1620402206');
+INSERT INTO `login_session` VALUES (17, '1006090', '6408c9e5e4d54367ac28b0621f7bc497', '1617811036', '1620403036');
+INSERT INTO `login_session` VALUES (18, '1006090', '7e0c2c831a214fd7a09f404c642b0400', '1617812150', '1620404150');
+INSERT INTO `login_session` VALUES (19, '1006090', '7653aacda76d49d5a7611600c8efa04c', '1617812214', '1617814014');
+INSERT INTO `login_session` VALUES (20, '1006090', '0126db4f48214dbaab3779a8a864735f', '1617812390', '1620404390');
+INSERT INTO `login_session` VALUES (21, '1006090', '44dea29915b24d9093b5f8ff7ad6ed55', '1617812399', '1620404399');
+INSERT INTO `login_session` VALUES (22, '1006090', 'c2178335be3b434fb6bc4c704ac042da', '1617812673', '1617814473');
+INSERT INTO `login_session` VALUES (23, '1006100', 'ff0ff6a461634761835cee1461d5f1ed', '1617812763', '1620404763');
+INSERT INTO `login_session` VALUES (24, '1006090', '23f35e35d7e14b8e937b0e32233c2cf2', '1617812782', '1617814582');
+INSERT INTO `login_session` VALUES (25, '1006090', '8ad63ba6d31a44f1b89b353cd738e00b', '1617813193', '1620405193');
+INSERT INTO `login_session` VALUES (26, '1006090', 'e5311165aa1043a4b88a24ded6518416', '1617813334', '1620405334');
+INSERT INTO `login_session` VALUES (27, '1006090', '9b161da3b59c4720b84bc345d34d397a', '1617813379', '1620405379');
+INSERT INTO `login_session` VALUES (28, '1006090', '94fbf433faf34daeb26e6cacd26373fa', '1617814061', '1620406061');
+INSERT INTO `login_session` VALUES (29, '1006090', '01cf0b9f17774947899825c90480f5d5', '1617820404', '1617822204');
+INSERT INTO `login_session` VALUES (31, '1006090', 'e253af502639431d85af885dc34b73e8', '1617846200', '1617848000');
+INSERT INTO `login_session` VALUES (32, '1006090', 'da90a2a111fe41078964335a5a4beac3', '1617849775', '1617851575');
+INSERT INTO `login_session` VALUES (33, '1006090', '6f4495814a714d19a62e2a9f3c7f2a37', '1617856982', '1620448982');
+INSERT INTO `login_session` VALUES (34, '1006090', '1b9622346c71498588abc70fab2a943c', '1617907178', '1617908978');
+INSERT INTO `login_session` VALUES (35, '1006090', 'b3f2ee04187943eab18dc86390afb227', '1618042058', '1620634058');
+INSERT INTO `login_session` VALUES (36, '1006090', '444094b577b641a084d43e8b7d002aff', '1618042221', '1620634221');
+INSERT INTO `login_session` VALUES (40, '1006090', '8c6702afd5d549a287f70b230189e666', '1618959191', '1621551191');
+INSERT INTO `login_session` VALUES (41, '1006090', '02c8f7e95a5541e19a6562edf36f5d0b', '1618983611', '1618985411');
+INSERT INTO `login_session` VALUES (43, '1006090', '4216902f14f94cb388fce19d5db84812', '1618988671', '1618990471');
+INSERT INTO `login_session` VALUES (45, '1006090', '418340e2ccb640b6b7552db0102c9f42', '1618991186', '1618992986');
+INSERT INTO `login_session` VALUES (46, '1006090', 'c08befdddc9145d5a14abef716dfe301', '1618993274', '1618995074');
+INSERT INTO `login_session` VALUES (47, '1006090', 'f53a65f382634bb38461e6b207c71e2c', '1618993338', '1618995138');
+INSERT INTO `login_session` VALUES (48, '1006090', 'c89b94482573499e8b4f2664daf35d45', '1619003145', '1619004945');
+INSERT INTO `login_session` VALUES (49, '1006090', '4cad60f20fad48728ed6ca4037609a7e', '1619028808', '1619030608');
+INSERT INTO `login_session` VALUES (52, '1006090', 'd53f0444659d41809820e75eaa0ea723', '1619029839', '1619031639');
+INSERT INTO `login_session` VALUES (58, '1006111', 'c143d4f1279140b388f16d17855ff6ec', '1619081191', '1619082991');
+INSERT INTO `login_session` VALUES (59, '1006090', '6c5d3adaa5a7497f802f084920ffbae3', '1619081446', '1619083246');
+INSERT INTO `login_session` VALUES (60, '1006111', '68af3ade56e04ec398917ec1d47bf876', '1619083224', '1619085024');
+INSERT INTO `login_session` VALUES (62, '1006111', 'e2621ce7468745f4abdb24e7aba67a71', '1619087666', '1619089466');
+INSERT INTO `login_session` VALUES (63, '1006112', '066a512a9f7640a58c0072a6a968f448', '1619088140', '1619089940');
+INSERT INTO `login_session` VALUES (67, '1006111', 'b375b0bae361443da6c4bacbc19110d9', '1619094434', '1619096234');
+INSERT INTO `login_session` VALUES (68, '1006118', '5cae8d1c1f5a48b99b81621598d1c94c', '1619095201', '1619097001');
+INSERT INTO `login_session` VALUES (69, '1006111', '7b0d992a7fcc484dbe152c14f56b328d', '1619096515', '1619098315');
+INSERT INTO `login_session` VALUES (70, '1006111', '7f98895705d3476faa4d680bf54ea3b8', '1619114668', '1619116468');
+INSERT INTO `login_session` VALUES (71, '1006111', 'a252e8412bd44e748d2d9d03aa4cd864', '1619130108', '1619131908');
+INSERT INTO `login_session` VALUES (72, '1006111', 'e979f3a68b3040278aa4854a6c429b06', '1619194568', '1619196368');
+INSERT INTO `login_session` VALUES (73, '1006111', '8890f147917c4ff698972a8ff2b718e9', '1619196983', '1619198783');
+INSERT INTO `login_session` VALUES (74, '1006111', 'f5ad29323e7b48518fc704e90f721c44', '1619256623', '1619258423');
+INSERT INTO `login_session` VALUES (75, '1006111', 'd073adb0ceac4885ad3cff7306a4bb74', '1619259240', '1619261040');
+INSERT INTO `login_session` VALUES (76, '1006111', '843665c8c300498cb64c0cc36fc60f9c', '1619261091', '1619262891');
+INSERT INTO `login_session` VALUES (77, '1006090', '9a2374bfcbd248ebad25c9ae927b10ea', '1619262170', '1619263970');
+INSERT INTO `login_session` VALUES (78, '1006111', '00739ce7de764444a73be660cdc82126', '1619264431', '1619266231');
+INSERT INTO `login_session` VALUES (79, '1006090', '5ebdb597b6c94a93a4ae53da4e8e94c4', '1619271872', '1619273672');
+INSERT INTO `login_session` VALUES (80, '1006090', '9e15b45711154f71b1cacf5db450a273', '1619282017', '1619283817');
+INSERT INTO `login_session` VALUES (81, '1006111', '8e4b618b5c1a4a4196311b891c905b4c', '1619334175', '1619335975');
+INSERT INTO `login_session` VALUES (82, '1006111', '953ee5f49c10429f9cfcad8a566d96d1', '1619339745', '1619341545');
+INSERT INTO `login_session` VALUES (83, '1006111', 'da4d4a1b8c444c98bda6d2557bd6a0c1', '1619348256', '1619350056');
+INSERT INTO `login_session` VALUES (84, '1006111', 'a075e07c403947dbba90feabee582443', '1619353063', '1619354863');
+INSERT INTO `login_session` VALUES (85, '1006111', '1673d32f9b4549ceb5d69b26f1e9dbb3', '1619360733', '1619362533');
+INSERT INTO `login_session` VALUES (86, '1006111', '0586da0904074aa9a624591ba98737f3', '1619360845', '1619362645');
+INSERT INTO `login_session` VALUES (87, '1006111', '4a9f0158e11743e2a8df10f40899f2bf', '1619383321', '1619385121');
+INSERT INTO `login_session` VALUES (88, '1006111', 'ffd222f7b73b4dc5a58a788a5d14de58', '1619386455', '1619388255');
+INSERT INTO `login_session` VALUES (89, '1006111', '43b5544ebd66478bb535b81c7f965585', '1619416675', '1619418475');
+INSERT INTO `login_session` VALUES (90, '1006111', '4aa3bb1dddb94cca9ecc9e5bc72fe9ee', '1619443346', '1619445146');
+INSERT INTO `login_session` VALUES (91, '1006123', 'c14de0e218cb4de38fa07fd84f5301de', '1619523621', '1619525421');
+INSERT INTO `login_session` VALUES (92, '1006111', 'c77ec51f66044a5c97b60dc412699dc7', '1619524661', '1619526461');
+INSERT INTO `login_session` VALUES (93, '1006111', 'd907f83faaa7405ca999389dbdf32b18', '1619526492', '1619528292');
+INSERT INTO `login_session` VALUES (94, '1006111', 'a85ddb5d18ac48458e9ccc7bd9b9437f', '1619530242', '1619532042');
+INSERT INTO `login_session` VALUES (95, '1006090', '5684398a20d441408030e571578c62d1', '1619530350', '1619532150');
+INSERT INTO `login_session` VALUES (96, '1006090', '30604213f09e4e67b14aba2b388049e9', '1619530822', '1619532622');
+INSERT INTO `login_session` VALUES (97, '1006111', 'b698ff525d1a4053869fbe9957e963fd', '1619532154', '1619533954');
+INSERT INTO `login_session` VALUES (98, '1006090', '6abdffd295e244b4968dc02540985f89', '1619532175', '1619533975');
+INSERT INTO `login_session` VALUES (99, '1006090', 'f32ed60d4e8d432d985e38dbcee0b535', '1619534104', '1619535904');
+INSERT INTO `login_session` VALUES (100, '1006127', '99d8f70643be4e61a203d3fe2e4e73bf', '1619534219', '1619536019');
+INSERT INTO `login_session` VALUES (101, '1006111', '0ae7712fee084b9a91e9b95026693cb1', '1619534895', '1619536695');
+INSERT INTO `login_session` VALUES (102, '1006111', '6f5eb79b21c040ebb59e1ab9d28e0412', '1619536880', '1619538680');
+INSERT INTO `login_session` VALUES (103, '1006111', 'cc25062de6624168bf18c6014272aa06', '1619609352', '1619611152');
+INSERT INTO `login_session` VALUES (104, '1006111', 'c592161ebd564f97b90c23ba47419560', '1619620783', '1619622583');
+INSERT INTO `login_session` VALUES (105, '1006090', '0f4d6039e5114672974e89c9689f1810', '1619621328', '1619623128');
+INSERT INTO `login_session` VALUES (106, '1006111', '76f2af21b00945afb48b99dab17ba41b', '1619622730', '1619624530');
+INSERT INTO `login_session` VALUES (107, '1006111', 'c85c1124d5d749ef89274be61f54d0f9', '1619645681', '1619647481');
+INSERT INTO `login_session` VALUES (108, '1006111', 'c0261051d2df41d7bf5ee0e97342bd22', '1619697031', '1619698831');
+INSERT INTO `login_session` VALUES (109, '1006111', '6a6e0c513c3d427b93484a130b732f72', '1619697079', '1619698879');
+INSERT INTO `login_session` VALUES (110, '1006111', '9bce4be60dc94237983c62e6dc6e9cee', '1619698451', '1619700251');
+INSERT INTO `login_session` VALUES (111, '1006111', '84096b9108f94b77b523f037357582bb', '1619698544', '1619700344');
+INSERT INTO `login_session` VALUES (112, '1006111', 'cd0093c172be4210b18df93d3d9ad63d', '1619699029', '1619700829');
+INSERT INTO `login_session` VALUES (113, '1006111', '4ca9cc98131a43e09c16461b7c8e7ecb', '1619699202', '1619701002');
+INSERT INTO `login_session` VALUES (114, '1006111', 'b149b137cbb34832bdff777c45c662d1', '1619701547', '1619703347');
+INSERT INTO `login_session` VALUES (115, '1006111', 'ea546498a73d42a785bfa2b6640f687c', '1619702255', '1619704055');
+INSERT INTO `login_session` VALUES (116, '1006111', '00be1be1391547c184dee60a53462045', '1619702379', '1619704179');
+INSERT INTO `login_session` VALUES (118, '1006111', 'ea020efc86af4c9d8461ce13726ac98d', '1619705198', '1619706998');
+INSERT INTO `login_session` VALUES (119, '1006111', '29ee71623a144497a3d3ded6d2208cb1', '1619705544', '1619707344');
+INSERT INTO `login_session` VALUES (120, '1006111', 'db2600804b114114848ef0b14bc2b6e5', '1619705655', '1619707455');
+INSERT INTO `login_session` VALUES (121, '1006111', '9e00b78136d045b9adcf4d999226702c', '1619705884', '1619707684');
+INSERT INTO `login_session` VALUES (122, '1006111', '5c4b439c12ec451db6c893803c9325b4', '1619706233', '1619708033');
+INSERT INTO `login_session` VALUES (123, '1006111', '6daab511eb694bc1943561f3b960c4bf', '1619707682', '1619709482');
+INSERT INTO `login_session` VALUES (124, '1006111', '641b03960a444992a5c72e475bce150b', '1619707703', '1619709503');
+INSERT INTO `login_session` VALUES (125, '1006111', '04f5771f14b746b58f896bc3229e8946', '1619708403', '1619710203');
+INSERT INTO `login_session` VALUES (126, '1006111', '0c4276b134494c3d9c28dbee74293cb0', '1619710352', '1619712152');
+INSERT INTO `login_session` VALUES (127, '1006111', 'd90ca552aa0a403081e7e0ef806df143', '1619710581', '1619712381');
+INSERT INTO `login_session` VALUES (128, '1006111', 'c04c5e6f51634f41b89a8effbadcf251', '1619716247', '1619718047');
+INSERT INTO `login_session` VALUES (130, '1006111', 'ceb161ddd3f54aa1bd95ca7ff7697b31', '1619726011', '1619727811');
+INSERT INTO `login_session` VALUES (131, '1006111', '916a59fc616f416583b0ecc96b649298', '1619729106', '1619730906');
+INSERT INTO `login_session` VALUES (132, '1006111', 'fd73219c1e74402abe4ef6898d42e2e5', '1619732024', '1619733824');
+INSERT INTO `login_session` VALUES (133, '1006111', '271c5764fb8d4497b77417e870fec8ff', '1619733914', '1619735714');
+INSERT INTO `login_session` VALUES (134, '1006111', '13aa21152eac40869b2efa2f5a33b138', '1619736122', '1619737922');
+INSERT INTO `login_session` VALUES (135, '1006111', '82856c12b05e4169b242e6a6f2e708ef', '1619749240', '1619751040');
+INSERT INTO `login_session` VALUES (137, '1006111', 'b2a578dc4f214ac49dc593620a070de7', '1619759605', '1619761405');
+INSERT INTO `login_session` VALUES (138, '1006111', '65cf4a066ded4d36a3d5c6e8ef38000a', '1619764729', '1619766529');
+INSERT INTO `login_session` VALUES (139, '1006111', '1ae8cfa3e951489486af8f94dda6921f', '1619766091', '1619767891');
+INSERT INTO `login_session` VALUES (140, '1006111', 'dfa572e013684ec6bba446e0a4d575e4', '1619766501', '1619768301');
+INSERT INTO `login_session` VALUES (141, '1006111', 'f112e2d8c43c441a9aed2419eb48d02b', '1619770127', '1619771927');
+INSERT INTO `login_session` VALUES (142, '1006111', 'f1daebc1b829422bb3fda700b55092a5', '1619777094', '1619778894');
+INSERT INTO `login_session` VALUES (143, '1006111', 'eb332d56cdb542668c0c57820c75de7a', '1619795783', '1619797583');
+INSERT INTO `login_session` VALUES (144, '1006111', 'e84a30172bcc4bc0a2c606aa47f20160', '1619800856', '1619802656');
+INSERT INTO `login_session` VALUES (145, '1006111', '903e1c2292554f289a6ed22976b1d498', '1619806641', '1619808441');
+INSERT INTO `login_session` VALUES (146, '1006111', '18cb119959a742e7886f23bc98705ee0', '1619846987', '1619848787');
+INSERT INTO `login_session` VALUES (147, '1006111', '32785f49e33b47899ed3115b1c8bdce6', '1619870241', '1619872041');
+INSERT INTO `login_session` VALUES (148, '1006111', '955f825e1d7f493bb7b31a4162f9bbf1', '1619880895', '1619882695');
+INSERT INTO `login_session` VALUES (149, '1006111', '33df00a4190e421486670b4b7fbee119', '1619891698', '1619893498');
+INSERT INTO `login_session` VALUES (150, '1006111', '5005e4a420dc41209175a4e9e31fed9a', '1619894119', '1619895919');
+INSERT INTO `login_session` VALUES (151, '1006111', '1ffa4e3565084aa3a3b7f40308ee5fc1', '1619894132', '1619895932');
+INSERT INTO `login_session` VALUES (152, '1006111', '6651387ae5b5478e86fc142e1831be4b', '1619894294', '1619896094');
+INSERT INTO `login_session` VALUES (153, '1006111', '7713997f434e43449f47d332470af004', '1619894605', '1619896405');
+INSERT INTO `login_session` VALUES (154, '1006111', 'cceb0d1e270646acaf78d0a77353dfd0', '1619934961', '1619936761');
+INSERT INTO `login_session` VALUES (155, '1006111', 'b7833eab01664fa583766983dbe200b1', '1619936443', '1619938243');
+INSERT INTO `login_session` VALUES (156, '1006090', '87bd5eaf7bc445e681bacc9a31b85213', '1619936960', '1619938760');
+INSERT INTO `login_session` VALUES (157, '1006111', 'fa33554798234b438408b4206a87515e', '1619937184', '1619938984');
+INSERT INTO `login_session` VALUES (158, '1006090', 'e6caf5ac412a40499a44c22df2401c89', '1619944280', '1619946080');
+INSERT INTO `login_session` VALUES (159, '1006111', '1f9425346ad54093b55c9c85448c0a27', '1619944529', '1619946329');
+INSERT INTO `login_session` VALUES (160, '1006111', '41adf43dc76d42dbbfa0acf8d5401764', '1619953858', '1619955658');
+INSERT INTO `login_session` VALUES (161, '1006111', '7c69a80c1d3e4409a41fe702d4020814', '1619953923', '1619955723');
+INSERT INTO `login_session` VALUES (162, '1006111', '42bcb7c77072451ebfc3410b9428ee44', '1619954016', '1619955816');
+INSERT INTO `login_session` VALUES (163, '1006111', '10f1bb1001dd4de7a67afa4df4fb6bb8', '1619955176', '1619956976');
+INSERT INTO `login_session` VALUES (164, '1006111', '3b2ebd49c3f74f6ba39f05e852a2db01', '1619955314', '1619957114');
+INSERT INTO `login_session` VALUES (165, '1006111', '98fb2dce207b443e946be540d88805b5', '1619960145', '1619961945');
+INSERT INTO `login_session` VALUES (166, '1006111', '771ba53474364607ab96909de92166ba', '1619966855', '1619968655');
+INSERT INTO `login_session` VALUES (167, '1006111', 'ef40a7177e5341f387bb8504b2f5b01e', '1619987014', '1619988814');
+INSERT INTO `login_session` VALUES (168, '1006111', '7faf9fa30b514d6ca2b476f0827f986c', '1619987019', '1619988819');
+INSERT INTO `login_session` VALUES (169, '1006111', '7cdf2b2dc177491a87deda9d9e8d5d8c', '1619987068', '1619988868');
+INSERT INTO `login_session` VALUES (170, '1006111', 'cd9e233e445e484c96b9f3e4a6039ccc', '1619987118', '1619988918');
+INSERT INTO `login_session` VALUES (171, '1006111', '40e1de79627044e0937826388c234890', '1619987129', '1619988929');
+INSERT INTO `login_session` VALUES (172, '1006111', '01d314734a42480ca9f64df946b539f7', '1619987133', '1619988933');
+INSERT INTO `login_session` VALUES (174, '1006111', 'd3e6f49a85ae4ecc97d1231a8fce6551', '1620027586', '1620029386');
+INSERT INTO `login_session` VALUES (175, '1006111', '57f694a192894750a5af244618f19cfc', '1620030157', '1620031957');
+INSERT INTO `login_session` VALUES (176, '1006111', '1a36be73311d41f99ffca648e5ca81c3', '1620030360', '1620032160');
+INSERT INTO `login_session` VALUES (177, '1006111', 'da779654f172490fb221c296f3a53cf1', '1620049757', '1620051557');
+INSERT INTO `login_session` VALUES (178, '1006111', '5a7cbea31fa741e6a905a9d040080542', '1620057294', '1620059094');
+INSERT INTO `login_session` VALUES (180, '1006111', '3d7e4cd9346d444a80825a74fe5b0b14', '1620057997', '1620059797');
+INSERT INTO `login_session` VALUES (181, '1006111', '79d78e2760a547348d5fba1dfe38b8ad', '1620060511', '1620062311');
+INSERT INTO `login_session` VALUES (182, '1006111', 'bc597d82e1344c61b395e4dee97a59f2', '1620064937', '1620066737');
+INSERT INTO `login_session` VALUES (183, '1006111', '27e6a4bfe7ab47f48a3d668ef763667a', '1620136225', '1620138025');
+INSERT INTO `login_session` VALUES (185, '1006111', '405058347fa34ffeae036452d9214395', '1620215760', '1620217560');
+INSERT INTO `login_session` VALUES (186, '1006090', '18b089878de64f54b94c554ec2eba6b6', '1620216015', '1620217815');
+INSERT INTO `login_session` VALUES (187, '1006111', '68bd128285734810b514a6b65e46fa14', '1620218091', '1620219891');
+INSERT INTO `login_session` VALUES (188, '1006111', 'f0641e3677f44a35a7211a42cbf4c817', '1620299581', '1620301381');
+INSERT INTO `login_session` VALUES (189, '1006111', '63ae5907b25e4acf8c18634ee23d8422', '1620306948', '1620308748');
+INSERT INTO `login_session` VALUES (190, '1006111', '6f8bd85ece544a789780c5954d81b588', '1620313126', '1620314926');
+INSERT INTO `login_session` VALUES (191, '1006111', '0d0ba8b3ddf84246b85b936e6356b88e', '1620320377', '1620322177');
+INSERT INTO `login_session` VALUES (192, '1006111', '4df219dbbbd34d609d3c2d071ab38adc', '1620323681', '1620325481');
+INSERT INTO `login_session` VALUES (193, '1006111', '987b8de0b2884347ad3f3cab61861180', '1620382578', '1620384378');
+INSERT INTO `login_session` VALUES (194, '1006111', '48b71b6044504ac7b5508cd452a088c5', '1620413325', '1620415125');
+INSERT INTO `login_session` VALUES (195, '1006111', '12d4a7bc43cd4393bc67e30784c60974', '1620479160', '1620480960');
+INSERT INTO `login_session` VALUES (196, '1006111', 'ab58063d51f74e71b205e2ba611b8017', '1620562140', '1620563940');
+INSERT INTO `login_session` VALUES (197, '1006111', '0ae1f5f77ae1451f8541f5a8424079f5', '1620566955', '1620568755');
+INSERT INTO `login_session` VALUES (198, '1006111', '0b480e82d154456f858c210e46290bd9', '1620570983', '1620572783');
+INSERT INTO `login_session` VALUES (199, '1006111', '9f9414ba87be4472b35287fedf9b2e8b', '1620573470', '1620575270');
+INSERT INTO `login_session` VALUES (200, '1006111', 'b86f4fa70f724b5c90e2834d2714d484', '1620582646', '1620584446');
+INSERT INTO `login_session` VALUES (201, '1006090', 'd5463478f8fc4375a176d8445129279c', '1620582958', '1620584758');
+INSERT INTO `login_session` VALUES (203, '1006111', 'a7223289b53c4923965e45afd01fcf95', '1620606906', '1620608706');
+INSERT INTO `login_session` VALUES (205, '1006111', '9f1ebed0a0b740d4b7759f5005ebe754', '1620609848', '1620611648');
+INSERT INTO `login_session` VALUES (206, '1006111', 'a265a5dbb35f410aba3c69fc81429e14', '1620613414', '1620615214');
+INSERT INTO `login_session` VALUES (207, '1006111', 'ac4f2adfefe74c9f9c8cfc99ad733a4b', '1620630433', '1620632233');
+INSERT INTO `login_session` VALUES (208, '1006111', 'cdc84e76dc20400f83a9e0780d6e9ddb', '1620662392', '1623254392');
+INSERT INTO `login_session` VALUES (209, '1006111', '9e355612d3d64d43b75b613bd10ee6f5', '1620670582', '1620672382');
+INSERT INTO `login_session` VALUES (210, '1006111', 'f2ba756db4bc417ca54f3b18503cf1e9', '1620670620', '1620672420');
+INSERT INTO `login_session` VALUES (211, '1006111', '3f669719ccaf4a42ae76d15888a27247', '1620681347', '1620683147');
+INSERT INTO `login_session` VALUES (212, '1006111', '2cd455a72db747a78e24865d22930f93', '1620681856', '1620683656');
+INSERT INTO `login_session` VALUES (213, '1006111', '93be9052f2be472bb723b66370f91465', '1620723344', '1620725144');
+INSERT INTO `login_session` VALUES (214, '1006111', '3e44f4d8549f4b64b561d640e0a03507', '1620754121', '1620755921');
+INSERT INTO `login_session` VALUES (215, '1006111', 'e9bfecbad9ec43ca946f568917c5e7bf', '1620756133', '1620757933');
+INSERT INTO `login_session` VALUES (216, '1006111', 'e0d2286fb43340be8150569cfa7ec771', '1620797759', '1620799559');
+INSERT INTO `login_session` VALUES (217, '1006111', 'ee9e0426ec5841a09a179797efa0a694', '1620834946', '1620836746');
+INSERT INTO `login_session` VALUES (218, '1006111', 'c48c697ff4654ba6817de6e64924b354', '1620838640', '1620840440');
+INSERT INTO `login_session` VALUES (219, '1006111', 'adf6b1c01de44e2ebc36447da6b2a8cf', '1620920795', '1620922595');
+INSERT INTO `login_session` VALUES (220, '1006111', '2ce377e50e344102887fc4036d5236fc', '1621161192', '1621162992');
+INSERT INTO `login_session` VALUES (221, '1006111', 'f7ecad83eb82423fa013985495908886', '1621234479', '1621236279');
+INSERT INTO `login_session` VALUES (222, '1006111', 'ab5e0eec3ce749f78338c63fe73c3bdc', '1621269455', '1621271255');
+INSERT INTO `login_session` VALUES (223, '1006111', 'dfd803af01554e409b261e4bc820c127', '1621952653', '1621954453');
+INSERT INTO `login_session` VALUES (224, '1006111', '3bea69faf5b7438ea2c89b429187ccd5', '1621952664', '1621954464');
+INSERT INTO `login_session` VALUES (225, '1006111', '8afbfe83e1b741fc86560057e66e2d69', '1621952763', '1621954563');
+INSERT INTO `login_session` VALUES (226, '1006111', 'd79cb575b90741ff8432ca8869f5d89c', '1621952775', '1621954575');
+INSERT INTO `login_session` VALUES (227, '1006111', '49d8ae4086074330aba3c2ebac15a052', '1621957041', '1621958841');
+INSERT INTO `login_session` VALUES (228, '1006111', '9ff5f0a4738c402790b09f3f9bc3a510', '1621958925', '1621960725');
+INSERT INTO `login_session` VALUES (229, '1006131', '3b21d41e78b643ca9e06d1036883e3fb', '1621959185', '1621960985');
+
+-- ----------------------------
+-- Table structure for otps
+-- ----------------------------
+DROP TABLE IF EXISTS `otps`;
+CREATE TABLE `otps`  (
+  `otp_id` int(11) NOT NULL AUTO_INCREMENT,
+  `otp` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `otp_email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `otp_inserted_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `otp_valid_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `otp_status` int(11) NOT NULL,
+  PRIMARY KEY (`otp_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 21 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of otps
+-- ----------------------------
+INSERT INTO `otps` VALUES (1, '11960', 'princeraj9137@gmail.com', '1617789932', '1617790832', 1);
+INSERT INTO `otps` VALUES (2, '23812', 'princeraj9137@gmail.com', '1617790081', '1617790981', 1);
+INSERT INTO `otps` VALUES (3, '87232', 'princeraj9137@gmail.com', '1617790139', '1617791039', 1);
+INSERT INTO `otps` VALUES (4, '69231', 'princeraj9137@gmail.com', '1617790235', '1617791135', 1);
+INSERT INTO `otps` VALUES (5, '74043', 'princeraj9137@gmail.com', '1617790287', '1617791187', 1);
+INSERT INTO `otps` VALUES (6, '40492', 'princeraj9137@gmail.com', '1617790317', '1617791217', 1);
+INSERT INTO `otps` VALUES (7, '72105', 'princeraj9137@gmail.com', '1617790958', '1617791858', 1);
+INSERT INTO `otps` VALUES (8, '25257', 'princeraj9137@gmail.com', '1617791005', '1617791905', 1);
+INSERT INTO `otps` VALUES (9, '80342', 'princeraj9137@gmail.com', '1617791079', '1617791979', 1);
+INSERT INTO `otps` VALUES (10, '78833', 'princeraj9137@gmail.com', '1617791891', '1617792791', 1);
+INSERT INTO `otps` VALUES (11, '68968', 'princeraj9137@gmail.com', '1617792014', '1617792914', 1);
+INSERT INTO `otps` VALUES (12, '51166', 'princeraj9137@gmail.com', '1617792441', '1617793341', 1);
+INSERT INTO `otps` VALUES (13, '81551', 'princeraj9137@gmail.com', '1617792552', '1617793452', 1);
+INSERT INTO `otps` VALUES (14, '30835', 'princeraj9137@gmail.com', '1617792907', '1617793807', 1);
+INSERT INTO `otps` VALUES (15, '96004', 'princeraj9137@gmail.com', '1617792957', '1617793857', 1);
+INSERT INTO `otps` VALUES (16, '47832', 'jaickykumar790@gmail.com', '1617813240', '1617814140', 1);
+INSERT INTO `otps` VALUES (17, '68439', 'princeraj9137@gmail.com', '1617813802', '1617814702', 1);
+INSERT INTO `otps` VALUES (18, '68387', 'princeraj9137@gmail.com', '1617851776', '1617852676', 1);
+INSERT INTO `otps` VALUES (19, '33186', 'princeraj9137@gmail.com', '1617851982', '1617852882', 1);
+INSERT INTO `otps` VALUES (20, '93673', 'princeraj9137@gmail.com', '1617861837', '1617862737', 1);
+
+-- ----------------------------
+-- Table structure for pair_count
+-- ----------------------------
+DROP TABLE IF EXISTS `pair_count`;
+CREATE TABLE `pair_count`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `pair_count` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 27 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of pair_count
+-- ----------------------------
+INSERT INTO `pair_count` VALUES (1, '1006095', '1617733800', '1');
+INSERT INTO `pair_count` VALUES (2, '1006091', '1617733800', '1');
+INSERT INTO `pair_count` VALUES (3, '1006090', '1617733800', '3');
+INSERT INTO `pair_count` VALUES (4, '1006092', '1617733800', '2');
+INSERT INTO `pair_count` VALUES (5, '1006090', '1617733800', '4');
+INSERT INTO `pair_count` VALUES (6, '1006094', '1617733800', '2');
+INSERT INTO `pair_count` VALUES (7, '1006093', '1617733800', '1');
+INSERT INTO `pair_count` VALUES (8, '1006091', '1617820200', '1');
+INSERT INTO `pair_count` VALUES (9, '1006090', '1617820200', '2');
+INSERT INTO `pair_count` VALUES (10, '1006100', '1617820200', '1');
+INSERT INTO `pair_count` VALUES (11, '1006102', '1617820200', '1');
+INSERT INTO `pair_count` VALUES (12, '1006098', '1619024400', '1');
+INSERT INTO `pair_count` VALUES (13, '1006091', '1619024400', '1');
+INSERT INTO `pair_count` VALUES (14, '1006111', '1619024400', '5');
+INSERT INTO `pair_count` VALUES (15, '1006112', '1619024400', '1');
+INSERT INTO `pair_count` VALUES (16, '1006114', '1619024400', '1');
+INSERT INTO `pair_count` VALUES (17, '1006118', '1619024400', '1');
+INSERT INTO `pair_count` VALUES (18, '1006113', '1619110800', '1');
+INSERT INTO `pair_count` VALUES (19, '1006111', '1619110800', '1');
+INSERT INTO `pair_count` VALUES (20, '1006115', '1619197200', '1');
+INSERT INTO `pair_count` VALUES (21, '1006111', '1619283600', '1');
+INSERT INTO `pair_count` VALUES (22, '1006115', '1620234000', '1');
+INSERT INTO `pair_count` VALUES (23, '1006118', '1620666000', '1');
+INSERT INTO `pair_count` VALUES (24, '1006111', '1620666000', '1');
+INSERT INTO `pair_count` VALUES (25, '1006124', '1621875600', '1');
+INSERT INTO `pair_count` VALUES (26, '1006115', '1621875600', '1');
+
+-- ----------------------------
+-- Table structure for payment_session
+-- ----------------------------
+DROP TABLE IF EXISTS `payment_session`;
+CREATE TABLE `payment_session`  (
+  `payment_id` int(255) NOT NULL AUTO_INCREMENT,
+  `payer_user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `order_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `payable_amount` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `paid_amount` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `payment_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `status` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`payment_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 23 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of payment_session
+-- ----------------------------
+INSERT INTO `payment_session` VALUES (1, '1006090', 'ORDS25533465', '999', '999.00', '2021-04-07 14:52:13.0', 'TXN_SUCCESS');
+INSERT INTO `payment_session` VALUES (2, '1006090', 'ORDS28727036', '999', '', '', 'inactive');
+INSERT INTO `payment_session` VALUES (3, '1006090', 'ORDS96218937', '9999', '9999.00', '2021-04-07 15:31:37.0', 'TXN_SUCCESS');
+INSERT INTO `payment_session` VALUES (4, '1006090', 'ORDS72342687', '2', '2.00', '2021-04-08 09:16:18.0', 'TXN_SUCCESS');
+INSERT INTO `payment_session` VALUES (5, '1006090', 'ORDS68089667', '9', '9.00', '2021-04-08 11:35:54.0', 'TXN_SUCCESS');
+INSERT INTO `payment_session` VALUES (6, '1006090', 'ORDS58377305', '1000', '', '', 'inactive');
+INSERT INTO `payment_session` VALUES (7, '1006091', 'ORDS29636905', '1000000', '', '', 'inactive');
+INSERT INTO `payment_session` VALUES (8, '1006111', 'ORDS96174536', '1000000', '1000000.00', '2021-04-22 14:10:39.0', 'TXN_SUCCESS');
+INSERT INTO `payment_session` VALUES (9, '1006112', 'ORDS84744916', '500000', '500000.00', '2021-04-22 16:12:48.0', 'TXN_SUCCESS');
+INSERT INTO `payment_session` VALUES (10, '1006111', 'ORDS49590503', '1000000', '1000000.00', '2021-04-22 16:19:57.0', 'TXN_SUCCESS');
+INSERT INTO `payment_session` VALUES (11, '1006115', 'ORDS10871449', '500000', '500000.00', '2021-04-22 17:46:18.0', 'TXN_SUCCESS');
+INSERT INTO `payment_session` VALUES (12, '1006127', 'ORDS62832992', '10000', '10000.00', '2021-04-27 20:10:56.0', 'TXN_SUCCESS');
+INSERT INTO `payment_session` VALUES (13, '1006127', 'ORDS74078199', '100000', '100000.00', '2021-04-27 20:11:47.0', 'TXN_SUCCESS');
+INSERT INTO `payment_session` VALUES (14, '1006111', 'ORDS12230489', '21212', '', '', 'inactive');
+INSERT INTO `payment_session` VALUES (15, '1006111', 'ORDS12051857', '21212', '', '', 'inactive');
+INSERT INTO `payment_session` VALUES (16, '1006111', 'ORDS40623761', '1090990', '', '', 'inactive');
+INSERT INTO `payment_session` VALUES (17, '1006111', 'ORDS28944401', '12', '', '', 'TXN_FAILURE');
+INSERT INTO `payment_session` VALUES (18, '1006111', 'ORDS90617437', '6666666', '', '', 'inactive');
+INSERT INTO `payment_session` VALUES (19, '1006111', 'ORDS96717034', '1000000', '1000000.00', '2021-05-09 19:02:16.0', 'TXN_SUCCESS');
+INSERT INTO `payment_session` VALUES (20, '1006111', 'ORDS58191447', '9000000', '9000000.00', '2021-05-09 19:03:21.0', 'TXN_SUCCESS');
+INSERT INTO `payment_session` VALUES (21, '1006131', 'ORDS28212176', '1000000', '1000000.00', '2021-05-25 21:43:30.0', 'TXN_SUCCESS');
+INSERT INTO `payment_session` VALUES (22, '1006131', 'ORDS25360194', '9000000', '9000000.00', '2021-05-25 21:44:21.0', 'TXN_SUCCESS');
+
+-- ----------------------------
+-- Table structure for pin_transfer_history
+-- ----------------------------
+DROP TABLE IF EXISTS `pin_transfer_history`;
+CREATE TABLE `pin_transfer_history`  (
+  `serial_number` int(255) NOT NULL AUTO_INCREMENT,
+  `pin_creator` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `pin_count` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `expenditue` decimal(10, 2) NOT NULL,
+  `date_created` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`serial_number`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 49 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of pin_transfer_history
+-- ----------------------------
+INSERT INTO `pin_transfer_history` VALUES (1, '1006090', '9', 441.00, '1617789354');
+INSERT INTO `pin_transfer_history` VALUES (2, '1006090', '5', 245.00, '1617789382');
+INSERT INTO `pin_transfer_history` VALUES (3, '1006090', '2', 98.00, '1617789388');
+INSERT INTO `pin_transfer_history` VALUES (4, '1006090', '1', 49.00, '1617789397');
+INSERT INTO `pin_transfer_history` VALUES (5, '1006090', '9', 441.00, '1617789716');
+INSERT INTO `pin_transfer_history` VALUES (6, '1006090', '9', 441.00, '1617789720');
+INSERT INTO `pin_transfer_history` VALUES (7, '1006090', '9', 441.00, '1617789724');
+INSERT INTO `pin_transfer_history` VALUES (8, '1006090', '9', 441.00, '1617789729');
+INSERT INTO `pin_transfer_history` VALUES (9, '1006090', '7', 343.00, '1617865107');
+INSERT INTO `pin_transfer_history` VALUES (10, '1006090', '1', 49.00, '1618951288');
+INSERT INTO `pin_transfer_history` VALUES (11, '1006090', '1', 49.00, '1618988723');
+INSERT INTO `pin_transfer_history` VALUES (12, '1006090', '1', 49.00, '1618994664');
+INSERT INTO `pin_transfer_history` VALUES (13, '1006090', '1', 49.00, '1618994734');
+INSERT INTO `pin_transfer_history` VALUES (14, '1006090', '1', 49.00, '1619029211');
+INSERT INTO `pin_transfer_history` VALUES (15, '1006091', '1', 49.00, '1619029553');
+INSERT INTO `pin_transfer_history` VALUES (16, '1006090', '1', 49.00, '1619078675');
+INSERT INTO `pin_transfer_history` VALUES (17, '1006111', '1', 49.00, '1619082535');
+INSERT INTO `pin_transfer_history` VALUES (18, '1006111', '1', 49.00, '1619087896');
+INSERT INTO `pin_transfer_history` VALUES (19, '1006111', '1', 49.00, '1619088373');
+INSERT INTO `pin_transfer_history` VALUES (20, '1006111', '1', 49.00, '1619088519');
+INSERT INTO `pin_transfer_history` VALUES (21, '1006112', '1', 49.00, '1619093691');
+INSERT INTO `pin_transfer_history` VALUES (22, '1006115', '1', 49.00, '1619093874');
+INSERT INTO `pin_transfer_history` VALUES (23, '1006112', '1', 49.00, '1619094256');
+INSERT INTO `pin_transfer_history` VALUES (24, '1006111', '1', 49.00, '1619094593');
+INSERT INTO `pin_transfer_history` VALUES (25, '1006111', '1', 49.00, '1619094712');
+INSERT INTO `pin_transfer_history` VALUES (26, '1006111', '1', 49.00, '1619094790');
+INSERT INTO `pin_transfer_history` VALUES (27, '1006111', '1', 49.00, '1619095135');
+INSERT INTO `pin_transfer_history` VALUES (28, '1006111', '1', 49.00, '1619095285');
+INSERT INTO `pin_transfer_history` VALUES (29, '1006111', '1', 49.00, '1619095303');
+INSERT INTO `pin_transfer_history` VALUES (30, '1006111', '1', 49.00, '1619194934');
+INSERT INTO `pin_transfer_history` VALUES (31, '1006111', '1', 49.00, '1619353199');
+INSERT INTO `pin_transfer_history` VALUES (32, '1006090', '2', 24.00, '1619533496');
+INSERT INTO `pin_transfer_history` VALUES (33, '1006090', '1', 12.00, '1619533551');
+INSERT INTO `pin_transfer_history` VALUES (34, '1006090', '1', 12.00, '1619533607');
+INSERT INTO `pin_transfer_history` VALUES (35, '1006090', '1', 12.00, '1619533616');
+INSERT INTO `pin_transfer_history` VALUES (36, '1006090', '1', 12.00, '1619533677');
+INSERT INTO `pin_transfer_history` VALUES (37, '1006090', '1', 12.00, '1619533693');
+INSERT INTO `pin_transfer_history` VALUES (38, '1006090', '1', 4000.00, '1619533768');
+INSERT INTO `pin_transfer_history` VALUES (39, '1006111', '1', 12000.00, '1619533951');
+INSERT INTO `pin_transfer_history` VALUES (40, '1006090', '1', 0.00, '1619535672');
+INSERT INTO `pin_transfer_history` VALUES (41, '1006111', '1', 0.00, '1619705616');
+INSERT INTO `pin_transfer_history` VALUES (42, '1006111', '2', 0.00, '1619705626');
+INSERT INTO `pin_transfer_history` VALUES (43, '1006111', '1', 0.00, '1619705632');
+INSERT INTO `pin_transfer_history` VALUES (44, '1006111', '5', 0.00, '1619707844');
+INSERT INTO `pin_transfer_history` VALUES (45, '1006111', '6', 0.00, '1619734120');
+INSERT INTO `pin_transfer_history` VALUES (46, '1006111', '1', 0.00, '1619881037');
+INSERT INTO `pin_transfer_history` VALUES (47, '1006111', '1', 0.00, '1620299751');
+INSERT INTO `pin_transfer_history` VALUES (48, '1006131', '1', 0.00, '1621959297');
+
+-- ----------------------------
+-- Table structure for pins
+-- ----------------------------
+DROP TABLE IF EXISTS `pins`;
+CREATE TABLE `pins`  (
+  `pin_id` int(255) NOT NULL AUTO_INCREMENT,
+  `pin` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `pin_creator` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `date_created` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `status` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `activation_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`pin_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 111 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of pins
+-- ----------------------------
+INSERT INTO `pins` VALUES (1, 'XMPTJI37', '1006090', '1617789354', 'active', '1617789976');
+INSERT INTO `pins` VALUES (2, 'FZK8Q97D', '1006090', '1617789354', 'active', '1617790096');
+INSERT INTO `pins` VALUES (3, 'EVASRGH5', '1006090', '1617789354', 'active', '1617790255');
+INSERT INTO `pins` VALUES (4, 'DQAZ9W1T', '1006090', '1617789354', 'active', '1617790307');
+INSERT INTO `pins` VALUES (5, '4IZ37VXD', '1006090', '1617789354', 'active', '1617790351');
+INSERT INTO `pins` VALUES (6, 'YKNWM2ZE', '1006090', '1617789354', 'active', '1617790988');
+INSERT INTO `pins` VALUES (7, 'M2HTXBUS', '1006090', '1617789354', 'active', '1617791044');
+INSERT INTO `pins` VALUES (8, '3SI6P87W', '1006090', '1617789354', 'active', '1617790224');
+INSERT INTO `pins` VALUES (9, 'WC78YFAZ', '1006090', '1617789354', 'active', '1617791096');
+INSERT INTO `pins` VALUES (10, '4WA2PD1R', '1006090', '1617789382', 'active', '1617791935');
+INSERT INTO `pins` VALUES (11, 'DGERLIZS', '1006090', '1617789382', 'active', '1617792062');
+INSERT INTO `pins` VALUES (12, 'KMRXC87Z', '1006090', '1617789382', 'active', '1617792572');
+INSERT INTO `pins` VALUES (13, 'UL485ZVE', '1006090', '1617789382', 'active', '1617792541');
+INSERT INTO `pins` VALUES (14, 'Z6H3KEM1', '1006090', '1617789382', 'active', '1617792949');
+INSERT INTO `pins` VALUES (15, 'CZ8RG6DA', '1006090', '1617789388', 'active', '1617793042');
+INSERT INTO `pins` VALUES (16, 'PC1ZBJ96', '1006090', '1617789388', 'active', '1617813275');
+INSERT INTO `pins` VALUES (17, 'ANT83FLD', '1006090', '1617789397', 'active', '1617813849');
+INSERT INTO `pins` VALUES (18, '8T1JV3XN', '1006090', '1617789716', 'active', '1617851870');
+INSERT INTO `pins` VALUES (19, 'G6BMQH8V', '1006090', '1617789716', 'active', '1617852008');
+INSERT INTO `pins` VALUES (20, 'FZNI2SEY', '1006090', '1617789716', 'active', '1617861893');
+INSERT INTO `pins` VALUES (21, 'HLS6IUKT', '1006090', '1617789716', 'active', '1619080793');
+INSERT INTO `pins` VALUES (22, 'CXUKSTRL', '1006090', '1617789716', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (23, 'MZIFUDK5', '1006090', '1617789716', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (24, 'PQZJ8BTR', '1006090', '1617789716', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (25, 'HT6U7Z2M', '1006090', '1617789716', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (26, '12VQ8PMA', '1006090', '1617789716', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (27, 'QKHGWP12', '1006090', '1617789720', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (28, '2NLMETU1', '1006090', '1617789720', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (29, 'YCB4L5SW', '1006090', '1617789720', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (30, 'WKZ96P2J', '1006090', '1617789720', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (31, 'CND4BY89', '1006090', '1617789720', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (32, '5P3G9LW7', '1006090', '1617789720', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (33, 'PDC3EWSR', '1006090', '1617789720', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (34, 'LWV2BMTU', '1006090', '1617789720', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (35, 'NQIC1HXZ', '1006090', '1617789720', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (36, 'HTWNUX1C', '1006090', '1617789724', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (37, 'N9KH6QYL', '1006090', '1617789724', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (38, 'H75KRJBD', '1006090', '1617789724', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (39, 'U28BZCDM', '1006090', '1617789724', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (40, 'JX2H8DZL', '1006090', '1617789724', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (41, 'B8TGNXW9', '1006090', '1617789724', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (42, 'UD2P1463', '1006090', '1617789724', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (43, 'BRWU5K2G', '1006090', '1617789724', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (44, '7APS4M1F', '1006090', '1617789724', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (45, 'JML8TRZD', '1006090', '1617789729', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (46, 'T9MWR4FQ', '1006090', '1617789729', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (47, 'PVD1BETF', '1006090', '1617789729', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (48, '1FIW6KDA', '1006090', '1617789729', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (49, '6TFPMX5U', '1006090', '1617789729', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (50, 'T7Z38VKB', '1006090', '1617789729', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (51, 'NZC6E4T7', '1006090', '1617789729', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (52, '17W3G5NI', '1006090', '1617789729', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (53, 'M7RNDZXE', '1006090', '1617789729', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (54, 'RS2JAK7Q', '1006090', '1617865107', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (55, '3UMY57ER', '1006090', '1617865107', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (56, 'QLS5W8ED', '1006090', '1617865107', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (57, 'PEB973W8', '1006090', '1617865107', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (58, 'YWVN9RIG', '1006090', '1617865107', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (59, 'DWHQNI2R', '1006090', '1617865107', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (60, 'GCLJSMKH', '1006090', '1617865107', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (61, 'AXJ2MZWH', '1006090', '1618951288', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (62, '5Z12D8NE', '1006090', '1618988723', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (63, 'UFB3WSLX', '1006090', '1618994664', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (64, 'R6YLG2WZ', '1006090', '1618994734', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (65, 'VJ9NCMT4', '1006090', '1619029211', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (66, '9TEXP614', '1006091', '1619029553', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (67, 'XGRWSKPH', '1006090', '1619078675', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (68, 'DAP6NWL3', '1006111', '1619082535', 'active', '1619087911');
+INSERT INTO `pins` VALUES (69, 'FDYXJMKA', '1006111', '1619087896', 'active', '1619088424');
+INSERT INTO `pins` VALUES (70, 'QJ6WBF87', '1006111', '1619088373', 'active', '1619088536');
+INSERT INTO `pins` VALUES (71, 'DXP8RCE3', '1006111', '1619088519', 'active', '1619094607');
+INSERT INTO `pins` VALUES (72, 'PES9RBYW', '1006112', '1619093691', 'active', '1619093708');
+INSERT INTO `pins` VALUES (73, '9T6ABR7P', '1006115', '1619093874', 'active', '1619093889');
+INSERT INTO `pins` VALUES (74, 'FCE61XUV', '1006112', '1619094256', 'active', '1619094289');
+INSERT INTO `pins` VALUES (75, 'GMYW1D2V', '1006111', '1619094593', 'active', '1619094721');
+INSERT INTO `pins` VALUES (76, 'FTKC62PV', '1006111', '1619094712', 'active', '1619094803');
+INSERT INTO `pins` VALUES (77, '2EHZ4SLV', '1006111', '1619094790', 'active', '1619095173');
+INSERT INTO `pins` VALUES (78, '65PHQ3T2', '1006111', '1619095135', 'active', '1619095329');
+INSERT INTO `pins` VALUES (79, 'ESFRVMAJ', '1006111', '1619095285', 'active', '1619194944');
+INSERT INTO `pins` VALUES (80, '75ECBHS8', '1006111', '1619095303', 'active', '1619261200');
+INSERT INTO `pins` VALUES (81, 'G1J7EZY2', '1006111', '1619194934', 'active', '1619256772');
+INSERT INTO `pins` VALUES (82, 'PH9B1U2J', '1006111', '1619353199', 'active', '1619353207');
+INSERT INTO `pins` VALUES (83, 'V75KBCA1', '1006090', '1619533496', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (84, '2BPFUK7H', '1006090', '1619533496', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (85, 'MGNZS4PF', '1006090', '1619533551', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (86, 'REQFA743', '1006090', '1619533607', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (87, 'MCHBVSF2', '1006090', '1619533616', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (88, '4WSVFT52', '1006090', '1619533677', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (89, 'NXHC32JD', '1006090', '1619533693', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (90, 'GT1QFZ4E', '1006090', '1619533768', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (91, 'BL3UYDGH', '1006111', '1619533951', 'active', '1619534204');
+INSERT INTO `pins` VALUES (92, 'S2EDLJ6P', '1006090', '1619535672', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (93, 'BGI8ZTH3', '1006111', '1619705616', 'active', '1619881083');
+INSERT INTO `pins` VALUES (94, 'BY24GNRL', '1006111', '1619705626', 'active', '1620299775');
+INSERT INTO `pins` VALUES (95, '8A9C1ZHQ', '1006111', '1619705626', 'active', '1620570996');
+INSERT INTO `pins` VALUES (96, 'UVTL3RN2', '1006111', '1619705632', 'active', '1620682380');
+INSERT INTO `pins` VALUES (97, '3S7RX8MH', '1006111', '1619707844', 'active', '1621959104');
+INSERT INTO `pins` VALUES (98, 'LA8IH1BJ', '1006111', '1619707844', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (99, 'B3KIV451', '1006111', '1619707844', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (100, 'CBYP2XAN', '1006111', '1619707844', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (101, 'B5QSGFVI', '1006111', '1619707844', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (102, 'GM5P8SED', '1006111', '1619734120', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (103, 'UT8WNLP3', '1006111', '1619734120', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (104, '2MK9GYIU', '1006111', '1619734120', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (105, 'HDW8ZXL9', '1006111', '1619734120', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (106, 'NGWAJQ1B', '1006111', '1619734120', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (107, 'NDM487QE', '1006111', '1619734120', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (108, 'XAKRIT9D', '1006111', '1619881037', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (109, 'LD2CRU43', '1006111', '1620299751', 'inactive', 'Not active');
+INSERT INTO `pins` VALUES (110, 'ZRGUKMW9', '1006131', '1621959297', 'active', '1621959309');
+
+-- ----------------------------
+-- Table structure for rewards_tbl
+-- ----------------------------
+DROP TABLE IF EXISTS `rewards_tbl`;
+CREATE TABLE `rewards_tbl`  (
+  `reward_id` int(255) NOT NULL AUTO_INCREMENT,
+  `matching_pair` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `reward` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `level` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`reward_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of rewards_tbl
+-- ----------------------------
+INSERT INTO `rewards_tbl` VALUES (1, '200', '4000000', 'Basic');
+INSERT INTO `rewards_tbl` VALUES (2, '1000', '20000000', 'Bronze');
+INSERT INTO `rewards_tbl` VALUES (3, '2000', '40000000', 'Silver');
+INSERT INTO `rewards_tbl` VALUES (4, '4000', '80000000', 'Gold');
+INSERT INTO `rewards_tbl` VALUES (5, '14000', '280000000', 'Platinum');
+INSERT INTO `rewards_tbl` VALUES (6, '21000', '280000000', 'Diamond');
+INSERT INTO `rewards_tbl` VALUES (7, '28000', '280000000', 'White Pearl');
+INSERT INTO `rewards_tbl` VALUES (8, '35000', '280000000', 'Gold Pearl');
+INSERT INTO `rewards_tbl` VALUES (9, '42000', '280000000', 'Black Pearl');
+
+-- ----------------------------
+-- Table structure for subscribe_plan
+-- ----------------------------
+DROP TABLE IF EXISTS `subscribe_plan`;
+CREATE TABLE `subscribe_plan`  (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `plan_name` varchar(15) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `price` int(11) NOT NULL,
+  `ref_commision` int(3) NOT NULL,
+  `bonus_bv` int(5) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 5 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of subscribe_plan
+-- ----------------------------
+INSERT INTO `subscribe_plan` VALUES (1, 'PEMULA', 1200000, 10, 2);
+INSERT INTO `subscribe_plan` VALUES (2, 'SENIOR', 3200000, 10, 6);
+INSERT INTO `subscribe_plan` VALUES (3, 'EXPERT', 8400000, 10, 14);
+INSERT INTO `subscribe_plan` VALUES (4, 'PROFESIONAL', 18000000, 10, 30);
+
+-- ----------------------------
+-- Table structure for ticket_messages
+-- ----------------------------
+DROP TABLE IF EXISTS `ticket_messages`;
+CREATE TABLE `ticket_messages`  (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `ticket_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `ticket_creator` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `ticket_message` varchar(2000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `ticket_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `ticket_files` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of ticket_messages
+-- ----------------------------
+INSERT INTO `ticket_messages` VALUES (1, '5472419930', '1006090', 'testing', '1617790802', '');
+INSERT INTO `ticket_messages` VALUES (2, '5472419930', '1006090', 'hello', '1617790851', '');
+INSERT INTO `ticket_messages` VALUES (3, '9395781091', '1006090', 'Hello', '1617813477', '');
+INSERT INTO `ticket_messages` VALUES (4, '9395781091', '1006090', 'Hello', '1617814400', '');
+INSERT INTO `ticket_messages` VALUES (5, '9395781091', '1006090', 'Hello', '1617814531', '');
+INSERT INTO `ticket_messages` VALUES (6, '9395781091', '1006090', 'Hello', '1617861716', '');
+INSERT INTO `ticket_messages` VALUES (7, '7754268020', '1006090', 'hello', '1617865442', '72f36b8f-0cb8-4852-839e-9b4df7fba4da.png,');
+INSERT INTO `ticket_messages` VALUES (8, '7754268020', '1006090', 'hello', '1617865487', '');
+INSERT INTO `ticket_messages` VALUES (9, '6674119658', '1006090', 'Hello', '1617881555', '');
+
+-- ----------------------------
+-- Table structure for tickets
+-- ----------------------------
+DROP TABLE IF EXISTS `tickets`;
+CREATE TABLE `tickets`  (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `ticket_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `ticket_creator` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `ticket_subject` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `ticket_create_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `status` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `ticket_closed_by` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `ticket_close_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `last_reply_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tickets
+-- ----------------------------
+INSERT INTO `tickets` VALUES (1, '5472419930', '1006090', 'testing', '1617790802', 'closed', '1006090', '1617865409', '');
+INSERT INTO `tickets` VALUES (2, '9395781091', '1006090', 'Hello', '1617813477', 'closed', '1006090', '1617864344', '1617861716');
+INSERT INTO `tickets` VALUES (3, '7754268020', '1006090', 'hello', '1617865442', 'open', '', '', '1617865487');
+INSERT INTO `tickets` VALUES (4, '6674119658', '1006090', 'Hello', '1617881555', 'closed', '1006090', '1617881596', '');
+
+-- ----------------------------
+-- Table structure for tokens
+-- ----------------------------
+DROP TABLE IF EXISTS `tokens`;
+CREATE TABLE `tokens`  (
+  `token_id` int(255) NOT NULL AUTO_INCREMENT,
+  `token` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `token_creator` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `token_inserted_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `token_valid_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `token_purpose` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `token_status` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`token_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tokens
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for transaction_history
+-- ----------------------------
+DROP TABLE IF EXISTS `transaction_history`;
+CREATE TABLE `transaction_history`  (
+  `transaction_id` int(255) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `amount` decimal(10, 2) NOT NULL,
+  `transaction_charge` decimal(10, 2) NOT NULL,
+  `net_amount` decimal(10, 2) NOT NULL,
+  `description` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `category` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `status` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`transaction_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 156 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of transaction_history
+-- ----------------------------
+INSERT INTO `transaction_history` VALUES (1, '1006090', 999.00, 0.00, 999.00, 'credit by paytm', 'deposit', '1617787333', 'credit');
+INSERT INTO `transaction_history` VALUES (2, '1006090', 19.00, 10.95, 8.05, '564261 256786  72897 912', 'withdraw', '1617787539', 'debit');
+INSERT INTO `transaction_history` VALUES (3, '1006090', 111.00, 5.55, 105.45, '564261 256786  72897 912', 'withdraw', '1617789228', 'debit');
+INSERT INTO `transaction_history` VALUES (4, '1006090', 441.00, 0.00, 441.00, 'bought 9 pins ', 'pin', '1617789354', 'debit');
+INSERT INTO `transaction_history` VALUES (5, '1006090', 245.00, 0.00, 245.00, 'bought 5 pins ', 'pin', '1617789382', 'debit');
+INSERT INTO `transaction_history` VALUES (6, '1006090', 98.00, 0.00, 98.00, 'bought 2 pins ', 'pin', '1617789388', 'debit');
+INSERT INTO `transaction_history` VALUES (7, '1006090', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1617789397', 'debit');
+INSERT INTO `transaction_history` VALUES (8, '1006090', 9999.00, 0.00, 9999.00, 'credit by paytm', 'deposit', '1617789697', 'credit');
+INSERT INTO `transaction_history` VALUES (9, '1006090', 441.00, 0.00, 441.00, 'bought 9 pins ', 'pin', '1617789716', 'debit');
+INSERT INTO `transaction_history` VALUES (10, '1006090', 441.00, 0.00, 441.00, 'bought 9 pins ', 'pin', '1617789720', 'debit');
+INSERT INTO `transaction_history` VALUES (11, '1006090', 441.00, 0.00, 441.00, 'bought 9 pins ', 'pin', '1617789724', 'debit');
+INSERT INTO `transaction_history` VALUES (12, '1006090', 441.00, 0.00, 441.00, 'bought 9 pins ', 'pin', '1617789729', 'debit');
+INSERT INTO `transaction_history` VALUES (13, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617789976', 'credit');
+INSERT INTO `transaction_history` VALUES (14, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617790096', 'credit');
+INSERT INTO `transaction_history` VALUES (15, '1006090', 20.00, 0.00, 20.00, 'pair income', '', '1617790096', 'credit');
+INSERT INTO `transaction_history` VALUES (16, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617790224', 'credit');
+INSERT INTO `transaction_history` VALUES (17, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617790255', 'credit');
+INSERT INTO `transaction_history` VALUES (18, '1006092', 20.00, 0.00, 20.00, 'pair income', '', '1617790255', 'credit');
+INSERT INTO `transaction_history` VALUES (19, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617790307', 'credit');
+INSERT INTO `transaction_history` VALUES (20, '1006090', 20.00, 0.00, 20.00, 'pair income', '', '1617790307', 'credit');
+INSERT INTO `transaction_history` VALUES (21, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617790351', 'credit');
+INSERT INTO `transaction_history` VALUES (22, '1006091', 20.00, 0.00, 20.00, 'pair income', '', '1617790351', 'credit');
+INSERT INTO `transaction_history` VALUES (23, '1006090', 20.00, 0.00, 20.00, 'pair income', '', '1617790351', 'credit');
+INSERT INTO `transaction_history` VALUES (24, '1006090', 1000.00, 50.00, 950.00, '<a href=\"http://localhost/mlm/assets/images/users/0472021153407c44b0549-bd49-4b0f-a899-b392f92c52fdpayment.jpg\" >QR Code</a>', 'withdraw', '1617790729', 'debit');
+INSERT INTO `transaction_history` VALUES (25, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617790988', 'credit');
+INSERT INTO `transaction_history` VALUES (26, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617791044', 'credit');
+INSERT INTO `transaction_history` VALUES (27, '1006096', 20.00, 0.00, 20.00, 'pair income', '', '1617791044', 'credit');
+INSERT INTO `transaction_history` VALUES (28, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617791096', 'credit');
+INSERT INTO `transaction_history` VALUES (29, '1006091', 20.00, 0.00, 20.00, 'pair income', '', '1617791096', 'credit');
+INSERT INTO `transaction_history` VALUES (30, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617791935', 'credit');
+INSERT INTO `transaction_history` VALUES (31, '1006095', 20.00, 0.00, 20.00, 'pair income', '', '1617791935', 'credit');
+INSERT INTO `transaction_history` VALUES (32, '1006091', 20.00, 0.00, 20.00, 'pair income', '', '1617791935', 'credit');
+INSERT INTO `transaction_history` VALUES (33, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617792062', 'credit');
+INSERT INTO `transaction_history` VALUES (34, '1006090', 20.00, 0.00, 20.00, 'pair income', '', '1617792062', 'credit');
+INSERT INTO `transaction_history` VALUES (35, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617792541', 'credit');
+INSERT INTO `transaction_history` VALUES (36, '1006092', 20.00, 0.00, 20.00, 'pair income', '', '1617792541', 'credit');
+INSERT INTO `transaction_history` VALUES (37, '1006090', 20.00, 0.00, 20.00, 'pair income', '', '1617792541', 'credit');
+INSERT INTO `transaction_history` VALUES (38, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617792572', 'credit');
+INSERT INTO `transaction_history` VALUES (39, '1006094', 20.00, 0.00, 20.00, 'pair income', '', '1617792572', 'credit');
+INSERT INTO `transaction_history` VALUES (40, '1006090', 20.00, 0.00, 20.00, 'pair income', '', '1617792572', 'credit');
+INSERT INTO `transaction_history` VALUES (41, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617792949', 'credit');
+INSERT INTO `transaction_history` VALUES (42, '1006093', 20.00, 0.00, 20.00, 'pair income', '', '1617792949', 'credit');
+INSERT INTO `transaction_history` VALUES (43, '1006092', 20.00, 0.00, 20.00, 'pair income', '', '1617792949', 'credit');
+INSERT INTO `transaction_history` VALUES (44, '1006090', 20.00, 0.00, 20.00, 'pair income', '', '1617792949', 'credit');
+INSERT INTO `transaction_history` VALUES (45, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617793042', 'credit');
+INSERT INTO `transaction_history` VALUES (46, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617813275', 'credit');
+INSERT INTO `transaction_history` VALUES (47, '1006090', 20.00, 0.00, 20.00, 'pair income', '', '1617813275', 'credit');
+INSERT INTO `transaction_history` VALUES (48, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617813849', 'credit');
+INSERT INTO `transaction_history` VALUES (49, '1006094', 20.00, 0.00, 20.00, 'pair income', '', '1617813849', 'credit');
+INSERT INTO `transaction_history` VALUES (50, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617851870', 'credit');
+INSERT INTO `transaction_history` VALUES (51, '1006091', 20.00, 0.00, 20.00, 'pair income', '', '1617851870', 'credit');
+INSERT INTO `transaction_history` VALUES (52, '1006090', 20.00, 0.00, 20.00, 'pair income', '', '1617851870', 'credit');
+INSERT INTO `transaction_history` VALUES (53, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617852008', 'credit');
+INSERT INTO `transaction_history` VALUES (54, '1006100', 20.00, 0.00, 20.00, 'pair income', '', '1617852008', 'credit');
+INSERT INTO `transaction_history` VALUES (55, '1006090', 2.00, 0.00, 2.00, 'credit by paytm', 'deposit', '1617853578', 'credit');
+INSERT INTO `transaction_history` VALUES (56, '1006090', 33.00, 11.65, 21.35, '<a href=\"https://jamsrworld.com/demo/mlm2/assets/images/users/0472021153407c44b0549-bd49-4b0f-a899-b392f92c52fdpayment.jpg\" >QR Code</a>', 'withdraw', '1617853652', 'debit');
+INSERT INTO `transaction_history` VALUES (57, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1617861893', 'credit');
+INSERT INTO `transaction_history` VALUES (58, '1006102', 20.00, 0.00, 20.00, 'pair income', '', '1617861893', 'credit');
+INSERT INTO `transaction_history` VALUES (59, '1006090', 20.00, 0.00, 20.00, 'pair income', '', '1617861893', 'credit');
+INSERT INTO `transaction_history` VALUES (60, '1006090', 9.00, 0.00, 9.00, 'credit by paytm', 'deposit', '1617861954', 'credit');
+INSERT INTO `transaction_history` VALUES (61, '1006090', 99.00, 14.95, 84.05, '1234567890', 'withdraw', '1617862070', 'debit');
+INSERT INTO `transaction_history` VALUES (62, '1006090', 65.00, 13.25, 51.75, '1234567890', 'withdraw', '1617863790', 'debit');
+INSERT INTO `transaction_history` VALUES (63, '1006090', 343.00, 0.00, 343.00, 'bought 7 pins ', 'pin', '1617865107', 'debit');
+INSERT INTO `transaction_history` VALUES (64, '1006090', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1618951288', 'debit');
+INSERT INTO `transaction_history` VALUES (65, '1006090', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1618988723', 'debit');
+INSERT INTO `transaction_history` VALUES (66, '1006090', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1618994664', 'debit');
+INSERT INTO `transaction_history` VALUES (67, '1006090', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1618994734', 'debit');
+INSERT INTO `transaction_history` VALUES (68, '1006090', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619029211', 'debit');
+INSERT INTO `transaction_history` VALUES (69, '1006091', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619029553', 'debit');
+INSERT INTO `transaction_history` VALUES (70, '1006090', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619078675', 'debit');
+INSERT INTO `transaction_history` VALUES (71, '1006090', 10.00, 0.00, 10.00, 'referral income', '', '1619080793', 'credit');
+INSERT INTO `transaction_history` VALUES (72, '1006098', 20.00, 0.00, 20.00, 'pair income', '', '1619080793', 'credit');
+INSERT INTO `transaction_history` VALUES (73, '1006091', 20.00, 0.00, 20.00, 'pair income', '', '1619080793', 'credit');
+INSERT INTO `transaction_history` VALUES (74, '1006111', 1000000.00, 0.00, 1000000.00, 'credit by paytm', 'deposit', '1619075439', 'credit');
+INSERT INTO `transaction_history` VALUES (75, '1006111', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619082535', 'debit');
+INSERT INTO `transaction_history` VALUES (76, '1006111', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619087896', 'debit');
+INSERT INTO `transaction_history` VALUES (77, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619087911', 'credit');
+INSERT INTO `transaction_history` VALUES (78, '1006112', 500000.00, 0.00, 500000.00, 'credit by paytm', 'deposit', '1619082768', 'credit');
+INSERT INTO `transaction_history` VALUES (79, '1006111', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619088373', 'debit');
+INSERT INTO `transaction_history` VALUES (80, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619088424', 'credit');
+INSERT INTO `transaction_history` VALUES (81, '1006111', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619088519', 'debit');
+INSERT INTO `transaction_history` VALUES (82, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619088536', 'credit');
+INSERT INTO `transaction_history` VALUES (83, '1006111', 20.00, 0.00, 20.00, 'pair income', '', '1619088536', 'credit');
+INSERT INTO `transaction_history` VALUES (84, '1006111', 1000000.00, 0.00, 1000000.00, 'credit by paytm', 'deposit', '1619083197', 'credit');
+INSERT INTO `transaction_history` VALUES (85, '1006112', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619093691', 'debit');
+INSERT INTO `transaction_history` VALUES (86, '1006112', 10.00, 0.00, 10.00, 'referral income', '', '1619093708', 'credit');
+INSERT INTO `transaction_history` VALUES (87, '1006115', 500000.00, 0.00, 500000.00, 'credit by paytm', 'deposit', '1619088378', 'credit');
+INSERT INTO `transaction_history` VALUES (88, '1006115', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619093874', 'debit');
+INSERT INTO `transaction_history` VALUES (89, '1006115', 10.00, 0.00, 10.00, 'referral income', '', '1619093889', 'credit');
+INSERT INTO `transaction_history` VALUES (90, '1006112', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619094256', 'debit');
+INSERT INTO `transaction_history` VALUES (91, '1006112', 10.00, 0.00, 10.00, 'referral income', '', '1619094289', 'credit');
+INSERT INTO `transaction_history` VALUES (92, '1006112', 20.00, 0.00, 20.00, 'pair income', '', '1619094289', 'credit');
+INSERT INTO `transaction_history` VALUES (93, '1006111', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619094593', 'debit');
+INSERT INTO `transaction_history` VALUES (94, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619094607', 'credit');
+INSERT INTO `transaction_history` VALUES (95, '1006111', 20.00, 0.00, 20.00, 'pair income', '', '1619094607', 'credit');
+INSERT INTO `transaction_history` VALUES (96, '1006111', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619094712', 'debit');
+INSERT INTO `transaction_history` VALUES (97, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619094721', 'credit');
+INSERT INTO `transaction_history` VALUES (98, '1006111', 20.00, 0.00, 20.00, 'pair income', '', '1619094721', 'credit');
+INSERT INTO `transaction_history` VALUES (99, '1006111', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619094790', 'debit');
+INSERT INTO `transaction_history` VALUES (100, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619094803', 'credit');
+INSERT INTO `transaction_history` VALUES (101, '1006114', 20.00, 0.00, 20.00, 'pair income', '', '1619094803', 'credit');
+INSERT INTO `transaction_history` VALUES (102, '1006111', 20.00, 0.00, 20.00, 'pair income', '', '1619094803', 'credit');
+INSERT INTO `transaction_history` VALUES (103, '1006111', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619095135', 'debit');
+INSERT INTO `transaction_history` VALUES (104, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619095173', 'credit');
+INSERT INTO `transaction_history` VALUES (105, '1006118', 20.00, 0.00, 20.00, 'pair income', '', '1619095173', 'credit');
+INSERT INTO `transaction_history` VALUES (106, '1006111', 20.00, 0.00, 20.00, 'pair income', '', '1619095173', 'credit');
+INSERT INTO `transaction_history` VALUES (107, '1006111', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619095285', 'debit');
+INSERT INTO `transaction_history` VALUES (108, '1006111', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619095303', 'debit');
+INSERT INTO `transaction_history` VALUES (109, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619095329', 'credit');
+INSERT INTO `transaction_history` VALUES (110, '1006111', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619194934', 'debit');
+INSERT INTO `transaction_history` VALUES (111, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619194944', 'credit');
+INSERT INTO `transaction_history` VALUES (112, '1006113', 20.00, 0.00, 20.00, 'pair income', '', '1619194944', 'credit');
+INSERT INTO `transaction_history` VALUES (113, '1006111', 20.00, 0.00, 20.00, 'pair income', '', '1619194944', 'credit');
+INSERT INTO `transaction_history` VALUES (114, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619256772', 'credit');
+INSERT INTO `transaction_history` VALUES (115, '1006115', 20.00, 0.00, 20.00, 'pair income', '', '1619256772', 'credit');
+INSERT INTO `transaction_history` VALUES (116, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619261200', 'credit');
+INSERT INTO `transaction_history` VALUES (117, '1006111', 100000.00, 5000.00, 95000.00, '<a href=\"https://anypearl.tohaputra.com/assets/images/users/04222021173533c5940fe3-cd43-48dc-86fb-a232dad49d39payment.jpg\" >QR Code</a>', 'withdraw', '1619262196', 'debit');
+INSERT INTO `transaction_history` VALUES (118, '1006111', 49.00, 0.00, 49.00, 'bought 1 pin ', 'pin', '1619353199', 'debit');
+INSERT INTO `transaction_history` VALUES (119, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619353207', 'credit');
+INSERT INTO `transaction_history` VALUES (120, '1006111', 20.00, 0.00, 20.00, 'pair income', '', '1619353207', 'credit');
+INSERT INTO `transaction_history` VALUES (121, '1006090', 24.00, 0.00, 24.00, 'bought 2 pins ', 'pin', '1619533496', 'debit');
+INSERT INTO `transaction_history` VALUES (122, '1006090', 12.00, 0.00, 12.00, 'bought 1 pin ', 'pin', '1619533551', 'debit');
+INSERT INTO `transaction_history` VALUES (123, '1006090', 12.00, 0.00, 12.00, 'bought 1 pin ', 'pin', '1619533607', 'debit');
+INSERT INTO `transaction_history` VALUES (124, '1006090', 12.00, 0.00, 12.00, 'bought 1 pin ', 'pin', '1619533616', 'debit');
+INSERT INTO `transaction_history` VALUES (125, '1006090', 12.00, 0.00, 12.00, 'bought 1 pin ', 'pin', '1619533677', 'debit');
+INSERT INTO `transaction_history` VALUES (126, '1006090', 12.00, 0.00, 12.00, 'bought 1 pin ', 'pin', '1619533693', 'debit');
+INSERT INTO `transaction_history` VALUES (127, '1006090', 4000.00, 0.00, 4000.00, 'bought 1 pin ', 'pin', '1619533768', 'debit');
+INSERT INTO `transaction_history` VALUES (128, '1006111', 12000.00, 0.00, 12000.00, 'bought 1 pin ', 'pin', '1619533951', 'debit');
+INSERT INTO `transaction_history` VALUES (129, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619534204', 'credit');
+INSERT INTO `transaction_history` VALUES (130, '1006127', 10000.00, 0.00, 10000.00, 'credit by paytm', 'deposit', '1619529056', 'credit');
+INSERT INTO `transaction_history` VALUES (131, '1006127', 100000.00, 0.00, 100000.00, 'credit by paytm', 'deposit', '1619529107', 'credit');
+INSERT INTO `transaction_history` VALUES (132, '1006090', 0.00, 0.00, 0.00, 'bought 1 pin ', 'pin', '1619535672', 'debit');
+INSERT INTO `transaction_history` VALUES (133, '1006111', 0.00, 0.00, 0.00, 'bought 1 pin ', 'pin', '1619705616', 'debit');
+INSERT INTO `transaction_history` VALUES (134, '1006111', 0.00, 0.00, 0.00, 'bought 2 pins ', 'pin', '1619705626', 'debit');
+INSERT INTO `transaction_history` VALUES (135, '1006111', 0.00, 0.00, 0.00, 'bought 1 pin ', 'pin', '1619705632', 'debit');
+INSERT INTO `transaction_history` VALUES (136, '1006111', 0.00, 0.00, 0.00, 'bought 5 pins ', 'pin', '1619707844', 'debit');
+INSERT INTO `transaction_history` VALUES (137, '1006111', 0.00, 0.00, 0.00, 'bought 6 pins ', 'pin', '1619734120', 'debit');
+INSERT INTO `transaction_history` VALUES (138, '1006111', 0.00, 0.00, 0.00, 'bought 1 pin ', 'pin', '1619881037', 'debit');
+INSERT INTO `transaction_history` VALUES (139, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1619881083', 'credit');
+INSERT INTO `transaction_history` VALUES (140, '1006111', 0.00, 0.00, 0.00, 'bought 1 pin ', 'pin', '1620299751', 'debit');
+INSERT INTO `transaction_history` VALUES (141, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1620299775', 'credit');
+INSERT INTO `transaction_history` VALUES (142, '1006115', 20.00, 0.00, 20.00, 'pair income', '', '1620299775', 'credit');
+INSERT INTO `transaction_history` VALUES (143, '1006111', 1000000.00, 0.00, 1000000.00, 'credit by paytm', 'deposit', '1620561736', 'credit');
+INSERT INTO `transaction_history` VALUES (144, '1006111', 9000000.00, 0.00, 9000000.00, 'credit by paytm', 'deposit', '1620561801', 'credit');
+INSERT INTO `transaction_history` VALUES (145, '1006111', 100000.00, 5000.00, 95000.00, '<a href=\"https://panel-mlm.tohaputra.com/assets/images/users/05920212030554ad23e52-f865-4573-8312-1362bc2806b6payment.jpg\" >QR Code</a>', 'withdraw', '1620583053', 'debit');
+INSERT INTO `transaction_history` VALUES (146, '1006111', 100000.00, 5000.00, 95000.00, '1222393938', 'withdraw', '1620583158', 'debit');
+INSERT INTO `transaction_history` VALUES (147, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1620682380', 'credit');
+INSERT INTO `transaction_history` VALUES (148, '1006118', 20.00, 0.00, 20.00, 'pair income', '', '1620682380', 'credit');
+INSERT INTO `transaction_history` VALUES (149, '1006111', 20.00, 0.00, 20.00, 'pair income', '', '1620682380', 'credit');
+INSERT INTO `transaction_history` VALUES (150, '1006111', 10.00, 0.00, 10.00, 'referral income', '', '1621959104', 'credit');
+INSERT INTO `transaction_history` VALUES (151, '1006124', 20.00, 0.00, 20.00, 'pair income', '', '1621959104', 'credit');
+INSERT INTO `transaction_history` VALUES (152, '1006115', 20.00, 0.00, 20.00, 'pair income', '', '1621959104', 'credit');
+INSERT INTO `transaction_history` VALUES (153, '1006131', 1000000.00, 0.00, 1000000.00, 'credit by paytm', 'deposit', '1621953810', 'credit');
+INSERT INTO `transaction_history` VALUES (154, '1006131', 9000000.00, 0.00, 9000000.00, 'credit by paytm', 'deposit', '1621953861', 'credit');
+INSERT INTO `transaction_history` VALUES (155, '1006131', 0.00, 0.00, 0.00, 'bought 1 pin ', 'pin', '1621959297', 'debit');
+
+-- ----------------------------
+-- Table structure for tree
+-- ----------------------------
+DROP TABLE IF EXISTS `tree`;
+CREATE TABLE `tree`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `referral_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `placement_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `placement_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `left_count` int(255) NOT NULL,
+  `right_count` int(255) NOT NULL,
+  `left_id` bigint(255) NOT NULL,
+  `right_id` bigint(255) NOT NULL,
+  `pair_count` int(255) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 43 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tree
+-- ----------------------------
+INSERT INTO `tree` VALUES (1, '1006090', '0', '0', 'left', 31, 10, 1006091, 1006092, 10);
+INSERT INTO `tree` VALUES (2, '1006091', '1006090', '1006090', 'left', 25, 5, 1006096, 1006095, 5);
+INSERT INTO `tree` VALUES (3, '1006092', '1006090', '1006090', 'right', 6, 3, 1006094, 1006093, 3);
+INSERT INTO `tree` VALUES (4, '1006093', '1006090', '1006092', 'right', 1, 1, 1006104, 1006101, 1);
+INSERT INTO `tree` VALUES (5, '1006094', '1006090', '1006092', 'left', 2, 3, 1006103, 1006102, 2);
+INSERT INTO `tree` VALUES (6, '1006095', '1006090', '1006091', 'right', 1, 3, 1006099, 1006100, 1);
+INSERT INTO `tree` VALUES (7, '1006096', '1006090', '1006091', 'left', 23, 1, 1006098, 1006097, 1);
+INSERT INTO `tree` VALUES (8, '1006097', '1006090', '1006096', 'right', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (9, '1006098', '1006090', '1006096', 'left', 1, 21, 1006105, 1006111, 1);
+INSERT INTO `tree` VALUES (10, '1006099', '1006090', '1006095', 'left', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (11, '1006100', '1006090', '1006095', 'right', 1, 1, 1006109, 1006108, 1);
+INSERT INTO `tree` VALUES (12, '1006101', '1006090', '1006093', 'right', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (13, '1006102', '1006090', '1006094', 'right', 1, 1, 1006110, 1006106, 1);
+INSERT INTO `tree` VALUES (14, '1006103', '1006090', '1006094', 'left', 1, 0, 1006107, 0, 0);
+INSERT INTO `tree` VALUES (15, '1006104', '1006090', '1006093', 'left', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (16, '1006105', '1006090', '1006098', 'left', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (17, '1006106', '1006090', '1006102', 'right', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (18, '1006107', '1006090', '1006103', 'left', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (19, '1006108', '1006090', '1006100', 'right', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (20, '1006109', '1006090', '1006100', 'left', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (21, '1006110', '1006090', '1006102', 'left', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (22, '1006111', '1006090', '1006098', 'right', 12, 8, 1006112, 1006114, 8);
+INSERT INTO `tree` VALUES (23, '1006112', '1006111', '1006111', 'left', 10, 1, 1006113, 1006117, 1);
+INSERT INTO `tree` VALUES (24, '1006113', '1006111', '1006112', 'left', 8, 1, 1006115, 1006123, 1);
+INSERT INTO `tree` VALUES (25, '1006114', '1006111', '1006111', 'right', 6, 1, 1006118, 1006120, 1);
+INSERT INTO `tree` VALUES (26, '1006115', '1006112', '1006113', 'left', 4, 3, 1006116, 1006124, 3);
+INSERT INTO `tree` VALUES (27, '1006116', '1006115', '1006115', 'left', 3, 0, 1006125, 0, 0);
+INSERT INTO `tree` VALUES (28, '1006117', '1006112', '1006112', 'right', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (29, '1006118', '1006111', '1006114', 'left', 3, 2, 1006119, 1006121, 2);
+INSERT INTO `tree` VALUES (30, '1006119', '1006111', '1006118', 'left', 2, 0, 1006122, 0, 0);
+INSERT INTO `tree` VALUES (31, '1006120', '1006111', '1006114', 'right', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (32, '1006121', '1006111', '1006118', 'right', 1, 0, 1006130, 0, 0);
+INSERT INTO `tree` VALUES (33, '1006122', '1006111', '1006119', 'left', 1, 0, 1006126, 0, 0);
+INSERT INTO `tree` VALUES (34, '1006123', '1006111', '1006113', 'right', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (35, '1006124', '1006111', '1006115', 'right', 1, 1, 1006129, 1006131, 1);
+INSERT INTO `tree` VALUES (36, '1006125', '1006111', '1006116', 'left', 2, 0, 1006127, 0, 0);
+INSERT INTO `tree` VALUES (37, '1006126', '1006111', '1006122', 'left', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (38, '1006127', '1006111', '1006125', 'left', 1, 0, 1006128, 0, 0);
+INSERT INTO `tree` VALUES (39, '1006128', '1006111', '1006127', 'left', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (40, '1006129', '1006111', '1006124', 'left', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (41, '1006130', '1006111', '1006121', 'left', 0, 0, 0, 0, 0);
+INSERT INTO `tree` VALUES (42, '1006131', '1006111', '1006124', 'right', 0, 0, 0, 0, 0);
+
+-- ----------------------------
+-- Table structure for users
+-- ----------------------------
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users`  (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `user_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `user_password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `first_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `last_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `user_phone` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `user_address` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `user_pincode` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `user_contact_email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `user_image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `account_image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `user_registration_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `user_account_number` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `user_upi` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `referal_code` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `status` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `account_type` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 43 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of users
+-- ----------------------------
+INSERT INTO `users` VALUES (1, '1006090', 'admin', '$2y$12$P1O92CI/2TwfI18Wnulp1Oo3aD6gTB/5F/egqDuBBqtkwdOVZ4uKK', 'Admin', 'Kumar', '911234567890', 'Sasaram', '821115', 'princeraj9137@gmail.com', '0472021154351a7576727-4b70-427c-a532-b050d9d2af64avatar.jpg', '0472021153407c44b0549-bd49-4b0f-a899-b392f92c52fdpayment.jpg', '1617786872', '1234567890', 'GHEY73637', '', 'active', NULL);
+INSERT INTO `users` VALUES (2, '1006091', 'XMPTJI37', '$2y$12$rz9iUKXmytDvzjEBXu7.z.Xna8hLJOWvVVVNh0AqbEWrngN4H2O/u', 'Toha', 'Putra', '81273428895', 'cilandak', '9614', 'latif@tohaputra.com', '042220210124379d8217d8-68df-4a78-b53f-6f1c5b6d2ddaavatar.jpg', '', '1617789976', '', '', 'XMPTJI37', 'active', NULL);
+INSERT INTO `users` VALUES (3, '1006092', 'FZK8Q97D', '$2y$10$5T8IAHWNumDgmqT4sz9VfO34dOiNS7eHNeSlEAvAJxyZoPxZ8WA9y', 'FZKQD', 'FZKQD', '1234567788999', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617790096', '', '', 'FZK8Q97D', 'active', NULL);
+INSERT INTO `users` VALUES (4, '1006093', '3SI6P87W', '$2y$10$Eo8KvcwvcVJXBCROLfoqVuK4vSpwKdO.011jqf4ZW/xeU2DQTkoIq', 'SIPW', 'SIPW', '1233445454554', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617790224', '', '', '3SI6P87W', 'active', NULL);
+INSERT INTO `users` VALUES (5, '1006094', 'EVASRGH5', '$2y$10$1mJNLSYXTRetfkbuKNvgk.lqUeb8KmkLnSWdmFU7sSNf8Ir6fKVHq', 'EVASRGH', 'EVASRGH', '3243523555523', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617790255', '', '', 'EVASRGH5', 'active', NULL);
+INSERT INTO `users` VALUES (6, '1006095', 'DQAZ9W1T', '$2y$10$8XwCiS2yuPVkwKDpFm/iKugObcyl6LeaiNyggDyDkJDF4JGgNS.Om', 'DQAZWT', 'DQAZWT', '1221334244243', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617790307', '', '', 'DQAZ9W1T', 'active', NULL);
+INSERT INTO `users` VALUES (7, '1006096', '4IZ37VXD', '$2y$10$TIq5rkDqJTtwfWzWSWcI.eCdfKaxYoh/QOfReUjAiRm76MSMlBrai', 'IZVXD', 'IZVXD', '4375643346435', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617790351', '', '', '4IZ37VXD', 'active', NULL);
+INSERT INTO `users` VALUES (8, '1006097', 'YKNWM2ZE', '$2y$10$XwCFoWSmTPQRtvLEgaNRM.XW09bhZvkUigVb3cFcDbuhwePJzQ.KW', 'YKNWMZE', 'YKNWMZE', '3425553245235', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617790988', '', '', 'YKNWM2ZE', 'active', NULL);
+INSERT INTO `users` VALUES (9, '1006098', 'M2HTXBUS', '$2y$10$.eadujnfjQuMNXQBSWxm0O0ttRvDUmAbAA78eTHfHfFe96gD6QwF.', 'MHTXBUS', 'MHTXBUS', '5436262452346', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617791044', '', '', 'M2HTXBUS', 'active', NULL);
+INSERT INTO `users` VALUES (10, '1006099', 'WC78YFAZ', '$2y$10$y.aB/bkKlJwt4h9kU2nQg.CYKNCSVvy4H0jNMmVI5wc9mBXlKGixi', 'WCYFAZ', 'WCYFAZ', '3124234143241', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617791096', '', '', 'WC78YFAZ', 'active', NULL);
+INSERT INTO `users` VALUES (11, '1006100', '4WA2PD1R', '$2y$10$o.tmTl.z9Of5hDA4KnVZjuZjDWJ9E4BGTsVecUK7Ez8RHv8U6uvfi', 'WAPDR', 'WAPDR', '2345525323453', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617791935', '', '', '4WA2PD1R', 'active', NULL);
+INSERT INTO `users` VALUES (12, '1006101', 'DGERLIZS', '$2y$10$MtYrLmmnSRgodL.8yWUcLuT4ksJgMPQVz1cpwQ8ylmkt8jog0JDPC', 'DGERLIZS', 'DGERLIZS', '3452342523423', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617792062', '', '', 'DGERLIZS', 'block', NULL);
+INSERT INTO `users` VALUES (13, '1006102', 'UL485ZVE', '$2y$10$LmbI0rQSPQqe.NDgHloNCO/D6ydoOrVcBqMdJVGQ4zFmo54RNq/oq', 'WAPDR', 'ULZVE', '5243623456234', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617792541', '', '', 'UL485ZVE', 'active', NULL);
+INSERT INTO `users` VALUES (14, '1006103', 'KMRXC87Z', '$2y$10$/Sex8kUSxQv1BEpbcJc5De/oCcSyVf/lv2OL142zAWmDZMPF99NxG', 'KMRXCZ', 'KMRXCZ', '5346234232342', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617792572', '', '', 'KMRXC87Z', 'active', NULL);
+INSERT INTO `users` VALUES (15, '1006104', 'Z6H3KEM1', '$2y$10$NQtJ6IiI5m2/02hSENe1e.KDVv255m0rk/YE.ESPMlRjs9P0NJiW.', 'ZHKEM', 'ZHKEM', '5634456565645', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617792949', '', '', 'Z6H3KEM1', 'active', NULL);
+INSERT INTO `users` VALUES (16, '1006105', 'CZ8RG6DA', '$2y$10$pT/Cem7cmIL/zDB9h3z33e191uLaSKPP.8XQIwDvkz.zlBFugdFNm', 'CZRGDA', 'CZRGDA', '6566345643636', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617793042', '', '', 'CZ8RG6DA', 'active', NULL);
+INSERT INTO `users` VALUES (17, '1006106', 'PC1ZBJ96', '$2y$10$/SqYpyCfoyVGjAAHfErmoexJvXiMCE9GCMdY2s3QBGjfcmddjmAHm', 'PCZBJ', 'PCZBJ', '6666666666666', '', '', 'jaickykumar790@gmail.com', 'avatar.jpg', '', '1617813275', '', '', 'PC1ZBJ96', 'active', NULL);
+INSERT INTO `users` VALUES (18, '1006107', 'ANT83FLD', '$2y$10$umCQHiC4dULvrO66vnjUFO8IgXMQxtITAs/DeX078pieZ.5TUwC2C', 'ANTFLD', 'ANTFLD', '8367234672465', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617813849', '', '', 'ANT83FLD', 'active', NULL);
+INSERT INTO `users` VALUES (19, '1006108', '8T1JV3XN', '$2y$10$f53MMzdHfyOyhnZTUIOP1u8zryCeBamdNpMhH/dvF28U2BrdZ7lZ2', 'TJVXN', 'TJVXN', '3452354235234', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617851870', '', '', '8T1JV3XN', 'active', NULL);
+INSERT INTO `users` VALUES (20, '1006109', 'G6BMQH8V', '$2y$10$vgvA0eLaMmJsV0mm8ILeUOLif8/zeD1lEySN2HziVmGFiFEvrbH2e', 'GBMQHV', 'GBMQHV', '4563546433643', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617852008', '', '', 'G6BMQH8V', 'active', NULL);
+INSERT INTO `users` VALUES (21, '1006110', 'FZNI2SEY', '$2y$10$coEhT5//HieFUb7hmvmOE.0jq0iJG1J81e8ZUP4OzIq4MVahUkIqC', 'FZNISEY', 'FZNISEY', '1234567788999', '', '', 'princeraj9137@gmail.com', 'avatar.jpg', '', '1617861893', '', '', 'FZNI2SEY', 'active', NULL);
+INSERT INTO `users` VALUES (22, '1006111', 'tohaputra', '$2y$10$2GiBypcuFmttrNeXZemN/.HVn2HaNhR7Hq4eVTR3AevEQqGJB7mZC', 'latif', 'tohaputra', '6281273428895', 'Jakarta Selatan', '6969', 'appstoha@gmail.com', '05920212029475494a2e4-0f61-48cf-bade-9f84baed74ddavatar.jpg', '05920212030554ad23e52-f865-4573-8312-1362bc2806b6payment.jpg', '1619080793', '1222393938', '@tohaputra', 'HLS6IUKT', 'active', 2);
+INSERT INTO `users` VALUES (23, '1006112', 'denikrida', '$2y$10$U/kBkAGjVyZarG0PaKfUdudSjlkNFl2yeH/eC87Y.J7VBwHEQ80ha', 'deni', 'krida', '629999993847', '', '', 'deni@gmail.com', 'avatar.jpg', '', '1619087911', '', '', 'DAP6NWL3', 'active', NULL);
+INSERT INTO `users` VALUES (24, '1006113', 'amanda', '$2y$10$70mvF03B.b/Zi.6QPV1mDOC/LnDROJfT7knjf3WvHljkb60brgGnq', 'amanda', 'manda', '62811111177', '', '', 'amanda@gmail.com', 'avatar.jpg', '', '1619088424', '', '', 'FDYXJMKA', 'active', NULL);
+INSERT INTO `users` VALUES (25, '1006114', 'mrkhong', '$2y$10$qeamp9G/eb6cvi1cjKaMF.hlzzC91IYEE78r9GzypG0D5kZV5.vUa', 'mr', 'khong', '6281212990091', '', '', 'mrkhong@gmail.com', 'avatar.jpg', '', '1619088536', '', '', 'QJ6WBF87', 'active', NULL);
+INSERT INTO `users` VALUES (26, '1006115', 'ican', '$2y$10$4Cm8W0N5EaHI1mmXiguIeu3obLLcChfJv09xv5trFe0vU3/CVOhKm', 'ican', 'aja', '62899999990', '', '', 'ican@gmail.com', 'avatar.jpg', '', '1619093708', '', '', 'PES9RBYW', 'active', NULL);
+INSERT INTO `users` VALUES (27, '1006116', 'cik', '$2y$10$AjuZrMcV1f/rEPlvNmBKzOTeqW2jnv86aV5..36AK.ybLr6l4Ll02', 'cik', 'aja', '62099993993', '', '', 'cik@gmail.com', 'avatar.jpg', '', '1619093889', '', '', '9T6ABR7P', 'active', NULL);
+INSERT INTO `users` VALUES (28, '1006117', 'toha', '$2y$10$0q8eHCCd47NXjL2Ve5oTnuNNSav0.mjmpWzmrs7ZCPTBgTLFxMU1a', 'toha', 'p', '628120000009', '', '', 'toha@gmail.com', 'avatar.jpg', '', '1619094289', '', '', 'FCE61XUV', 'active', NULL);
+INSERT INTO `users` VALUES (29, '1006118', 'siti', '$2y$10$2l6x8hsU5n/0mfC3hRRhB.hRx4Ouoy4pkI3cFuNbP4Km66sAPy7T.', 'siti', 'r', '62812000991', '', '', 'siti@gmail.com', 'avatar.jpg', '', '1619094607', '', '', 'DXP8RCE3', 'active', NULL);
+INSERT INTO `users` VALUES (30, '1006119', 'pedro', '$2y$10$4m83CwiP0AoOvygeQGPSQO.KHP7LOWljzhYwokG9541GKGkduJBHi', 'pedro', 'aja', '62999889887', '', '', 'pedro@gmail.com', 'avatar.jpg', '', '1619094721', '', '', 'GMYW1D2V', 'active', NULL);
+INSERT INTO `users` VALUES (31, '1006120', 'sandy', '$2y$10$vua1z1H0v554MgX41J6lOuwk1L1yFnDvnTJ4VDubZYiKJwFEFOjsa', 'sandy', 'p', '628127288829', '', '', 'sandy@gmail.com', 'avatar.jpg', '', '1619094803', '', '', 'FTKC62PV', 'active', NULL);
+INSERT INTO `users` VALUES (32, '1006121', 'elda', '$2y$10$WtGizlOyAeNOlfcNL46qAuGkbAy2meP3eXMUsAHMk.ItZ4sBEQGCK', 'elda', 'aja', '872999993837', '', '', 'elda@gmail.com', 'avatar.jpg', '', '1619095173', '', '', '2EHZ4SLV', 'active', NULL);
+INSERT INTO `users` VALUES (33, '1006122', 'aziz', '$2y$10$ee9J7n0ihVDhhQix7wTv5u1GRkdZTY9xlp3Gj3F.atz6q3hUpXva6', 'aziz', 'aja', '88999383839', '', '', 'aziz@gmail.com', 'avatar.jpg', '', '1619095329', '', '', '65PHQ3T2', 'active', NULL);
+INSERT INTO `users` VALUES (34, '1006123', 'sam', '$2y$10$bhlHZ67g5dUOOi/zWugHButUCJDlwmiJGVSO0rs81eA4Ql1WNq042', 'sam', 'aja', '81212121212', '', '', 'sam@gmail.com', 'avatar.jpg', '', '1619194944', '', '', 'ESFRVMAJ', 'active', NULL);
+INSERT INTO `users` VALUES (35, '1006124', 'uswat', '$2y$10$/zjefVi.ZX7qq3rCcSj7RO4ovz.mb9f0oZT2W7nDKEmqr0C6v8MDG', 'uswat', 'hasanah', '28820999293', '', '', 'uswat@gmail.com', 'avatar.jpg', '', '1619256772', '', '', 'G1J7EZY2', 'active', NULL);
+INSERT INTO `users` VALUES (36, '1006125', 'asal', '$2y$10$muPYGsA4qVMnpuijVQ4ojuQFos5nUZw6OT2u0GQY7kPqas4Ed7pbS', 'asal', 'asal', '2323049324092', '', '', 'asal@gmail.com', 'avatar.jpg', '', '1619261200', '', '', '75ECBHS8', 'active', NULL);
+INSERT INTO `users` VALUES (37, '1006126', 'kiri', '$2y$10$yYu8MNsxhbvgTcLBxqb0mem1FvxkGquFXPns3DgmyOm.kEFgfYiLK', 'kiri', 'kanan', '93939390292', '', '', 'kiri@gmail.com', 'avatar.jpg', '', '1619353207', '', '', 'PH9B1U2J', 'active', NULL);
+INSERT INTO `users` VALUES (38, '1006127', 'abdul', '$2y$10$Hlh124OZr90cnufeSn5stOFH86PLZyQxd6ioLucsrWKMmmjzUFiBG', 'latif', 'abdul', '628111079393', '', '', 'latif@tohaputra.com', 'avatar.jpg', '', '1619534204', '', '', 'BL3UYDGH', 'active', NULL);
+INSERT INTO `users` VALUES (39, '1006128', 'latifsandy', '$2y$10$uPyZpcN61WxVjdYmfQ/mRO8BgJcz6DfP8H1vkrUY9hujg0AgKbQjy', 'latif', 'sandy', '6212999981990', '', '', 'latifsandy@gmail.com', 'avatar.jpg', '', '1619881083', '', '', 'BGI8ZTH3', 'active', NULL);
+INSERT INTO `users` VALUES (40, '1006129', 'kiriaja', '$2y$10$ksUf7o4sCPZVj1tv5IX.Iu9kmZD/6LphhNAEv93O1197Scw9rdS2q', 'test', 'kiri', '88388393390', '', '', 'kiri@gmail.com', 'avatar.jpg', '', '1620299775', '', '', 'BY24GNRL', 'active', NULL);
+INSERT INTO `users` VALUES (41, '1006130', 'okeaja', '$2y$10$Swe83AzDlq0hh9T0CPMXtOzkE7Hi62jeIkXaGf/YxiB.yQ5gmuqU6', 'oke', 'aja', '888777737939', '', '', 'okeaja@gmail.com', 'avatar.jpg', '', '1620682380', '', '', 'UVTL3RN2', 'active', NULL);
+INSERT INTO `users` VALUES (42, '1006131', 'latiftoha', '$2y$10$NPdMpAEWLK.0/jHJRsRkROUvL.KXJ2v5ClSLmxI02rG8iLiScnYB.', 'latif', 'aja', '08123223222', '', '', 'latitoha@gmail.xom', 'avatar.jpg', '', '1621959104', '', '', '3S7RX8MH', 'active', 3);
+
+-- ----------------------------
+-- Table structure for users_plan
+-- ----------------------------
+DROP TABLE IF EXISTS `users_plan`;
+CREATE TABLE `users_plan`  (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `user_id` int(255) NOT NULL,
+  `plan_id` int(255) NOT NULL,
+  `created_date` datetime(0) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 4 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Fixed;
+
+-- ----------------------------
+-- Records of users_plan
+-- ----------------------------
+INSERT INTO `users_plan` VALUES (1, 1006111, 2, '2021-05-09 21:36:34');
+INSERT INTO `users_plan` VALUES (2, 1006111, 2, '2021-05-09 21:36:36');
+INSERT INTO `users_plan` VALUES (3, 1006131, 3, '2021-05-25 23:15:09');
+
+-- ----------------------------
+-- Table structure for users_rewards
+-- ----------------------------
+DROP TABLE IF EXISTS `users_rewards`;
+CREATE TABLE `users_rewards`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `reward` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `reward_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of users_rewards
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for wallet_logs
+-- ----------------------------
+DROP TABLE IF EXISTS `wallet_logs`;
+CREATE TABLE `wallet_logs`  (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `wallet` decimal(50, 2) NOT NULL,
+  `date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of wallet_logs
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for withdraw_request
+-- ----------------------------
+DROP TABLE IF EXISTS `withdraw_request`;
+CREATE TABLE `withdraw_request`  (
+  `withdraw_id` int(255) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `amount` decimal(10, 2) NOT NULL,
+  `charge` decimal(10, 2) NOT NULL,
+  `other_charge` decimal(10, 2) NOT NULL,
+  `payable` decimal(10, 2) NOT NULL,
+  `payment_method` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `requested_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `status` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `payment_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`withdraw_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of withdraw_request
+-- ----------------------------
+INSERT INTO `withdraw_request` VALUES (1, '1006090', 19.00, 0.95, 10.00, 8.05, 'paytm||564261 256786  72897 912', '1617787531', 'success', '1617787539');
+INSERT INTO `withdraw_request` VALUES (2, '1006090', 111.00, 5.55, 0.00, 105.45, 'paytm||564261 256786  72897 912', '1617788973', 'success', '1617789228');
+INSERT INTO `withdraw_request` VALUES (3, '1006090', 1000.00, 50.00, 0.00, 950.00, 'qr||0472021153407c44b0549-bd49-4b0f-a899-b392f92c52fdpayment.jpg', '1617790660', 'success', '1617790729');
+INSERT INTO `withdraw_request` VALUES (4, '1006090', 33.00, 1.65, 10.00, 21.35, 'qr||0472021153407c44b0549-bd49-4b0f-a899-b392f92c52fdpayment.jpg', '1617853638', 'success', '1617853652');
+INSERT INTO `withdraw_request` VALUES (5, '1006090', 99.00, 4.95, 10.00, 84.05, 'paytm||1234567890', '1617861993', 'success', '1617862070');
+INSERT INTO `withdraw_request` VALUES (6, '1006090', 65.00, 3.25, 10.00, 51.75, 'paytm||1234567890', '1617862478', 'success', '1617863790');
+INSERT INTO `withdraw_request` VALUES (7, '1006090', 666.00, 33.30, 0.00, 632.70, '', '1617862844', 'pending', '');
+INSERT INTO `withdraw_request` VALUES (8, '1006090', 999.00, 49.95, 0.00, 949.05, '', '1617862872', 'pending', '');
+INSERT INTO `withdraw_request` VALUES (9, '1006090', 99.00, 4.95, 10.00, 84.05, '', '1617865207', 'pending', '');
+INSERT INTO `withdraw_request` VALUES (10, '1006111', 100000.00, 5000.00, 0.00, 95000.00, 'qr||04222021173533c5940fe3-cd43-48dc-86fb-a232dad49d39payment.jpg', '1619262156', 'success', '1619262196');
+INSERT INTO `withdraw_request` VALUES (11, '1006111', 150000.00, 7500.00, 0.00, 142500.00, '', '1619707905', 'pending', '');
+INSERT INTO `withdraw_request` VALUES (12, '1006111', 200000.00, 10000.00, 0.00, 190000.00, '', '1620022688', 'pending', '');
+INSERT INTO `withdraw_request` VALUES (13, '1006111', 100000.00, 5000.00, 0.00, 95000.00, 'qr||05920212030554ad23e52-f865-4573-8312-1362bc2806b6payment.jpg', '1620582752', 'success', '1620583053');
+INSERT INTO `withdraw_request` VALUES (14, '1006111', 100000.00, 5000.00, 0.00, 95000.00, 'paytm||1222393938', '1620583143', 'success', '1620583158');
+
+SET FOREIGN_KEY_CHECKS = 1;
